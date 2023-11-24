@@ -1,11 +1,11 @@
 import { Menu } from '../../components/Menu';
+import { PageIntro } from '../../components/PageIntro';
 
 export const HomePage = () => {
   return (
-    <div>
+    <main>
       <Menu />
-      <h2>Home Page</h2>
-      <p>Super testík</p>
-    </div>
+      <PageIntro />
+    </main>
   );
 };
