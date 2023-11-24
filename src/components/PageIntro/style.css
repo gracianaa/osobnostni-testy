@@ -1,7 +1,29 @@
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.intro__text {
+  text-align: center;
+}
+
+.intro__heading {
+  font-size: 36px;
+}
+
+.intro__subHeading {
+  font-family: var(--font-primary);
+  font-size: 20px;
+}
+
 .intro__image {
-  width: 400px;
+  width: 100%;
+  margin-top: 15px;
+  text-align: center;
 }
 
 .intro__image img {
   width: 100%;
+  max-width: 500px;
 }
