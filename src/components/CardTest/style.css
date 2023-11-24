@@ -1,7 +1,22 @@
 .cardTest__image {
-  width: 300px;
+  width: 100%;
+  text-align: center;
 }
 
 .cardTest__image img {
+  max-width: 300px;
   width: 100%;
+}
+
+.cardTest {
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.368);
+  box-shadow: var(--shadow);
+  padding: 30px;
+  width: 80%;
+}
+
+.cardTest__info {
+  text-align: center;
+  margin-top: 8px;
 }

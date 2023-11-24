@@ -1,0 +1,19 @@
+.howItWorks__flex {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.howItWorks__number {
+  padding: 20px;
+  border-radius: 50%;
+  border: 3px solid var(--color-primary);
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-primary);
+  font-size: 25px;
+}
