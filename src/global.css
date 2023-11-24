@@ -32,6 +32,12 @@ h2 {
   margin: 15px 0;
 }
 
+h1,
+h2,
+h3 {
+  text-align: center;
+}
+
 main {
   max-width: 1000px;
   margin: 0 auto;
@@ -45,6 +51,11 @@ main {
   font-size: 15px;
   border-radius: 15px;
   box-shadow: 3px 3px 10px hsla(0, 0%, 23%, 0.301);
+
+}
+
+.button__container {
+  text-align: center;
 }
 
 section {
