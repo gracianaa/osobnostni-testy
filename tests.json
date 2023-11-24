@@ -1,0 +1,23 @@
+[
+  {
+    "id": 0,
+    "title": "Jste konfliktní?",
+    "time": 10,
+    "numberOfQuestions": 12,
+    "img": "/images/extrov.png"
+  },
+  {
+    "id": 1,
+    "title": "Jste introvert?",
+    "time": 10,
+    "numberOfQuestions": 12,
+    "img": "/images/extrov.png"
+  },
+  {
+    "id": 2,
+    "title": "Jste konfliktní typ?",
+    "time": 10,
+    "numberOfQuestions": 12,
+    "img": "/images/extrov.png"
+  }
+]
