@@ -4,7 +4,7 @@ import { CardTest } from '../CardTest';
 
 export const ChooseTest = () => {
   return (
-    <section className="testList">
+    <section className="testList" id="chooseTest">
       <h2 className="testList__header">Vyber si svůj test</h2>
       <div className="testList__cards">
         {tests.map((test) => (

@@ -2,7 +2,7 @@ import './style.css';
 
 export const HowItWorks = () => {
   return (
-    <section className="howItWorks">
+    <section className="howItWorks" id="howItWorks">
       <h2 className="howItWorks__heading">Jak pracovat s testy?</h2>
       <div className="howItWorks__container">
         <div className="howItWorks__flex">
