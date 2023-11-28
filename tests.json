@@ -1,23 +1,902 @@
 [
   {
     "id": 0,
-    "title": "Jste konfliktní?",
-    "time": 10,
-    "numberOfQuestions": 12,
-    "img": "/images/extrov.png"
+    "title": "Jste konfliktní typ?",
+    "minutes": 10,
+    "img": "/images/extrov.png",
+    "questions": [
+      {
+        "id": 0,
+        "question": "Dojde-li ke konfliktu:",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Snažíte se najít kompromis.",
+            "value": 2
+          },
+          {
+            "id": 1,
+            "answer": "Snažíte se druhé straně vysvětlit svůj názor.",
+            "value": 3
+          },
+          {
+            "id": 2,
+            "answer": "Snažíte se udržet civilizovanou konverzaci a situaci tak, aby byli všichni spokojení.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "question": "Abyste vyřešili spor:",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Domluvíte se na kompromisu.",
+            "value": 2
+          },
+          {
+            "id": 1,
+            "answer": "Vyhovíte druhé straně.",
+            "value": 1
+          },
+          {
+            "id": 2,
+            "answer": "Budete si stát tvrdě za svým.",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Během konfliktu:",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Vždy se snažíte směřovat konverzaci pozitivním směrem.",
+            "value": 2
+          },
+          {
+            "id": 1,
+            "answer": "Držíte se faktů a vyhýbáte se emocím.",
+            "value": 3
+          },
+          {
+            "id": 2,
+            "answer": "Snažíte se být nenápadní, protože je vám takový stres nepříjemný.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Když se nemůžete dohodnout:",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Zůstanete klidní a rozvážní a snažíte se najít řešení vhodné pro všechny.",
+            "value": 2
+          },
+          {
+            "id": 1,
+            "answer": "Snažíte se dál diskutovat, a pokud nikdo nerozhodne, rozhodnete sami.",
+            "value": 3
+          },
+          {
+            "id": 2,
+            "answer": "Podřídíte se ostatním.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Co si myslíte o konfliktech?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Jsou stresující a vyvolávají ve vás úzkost.",
+            "value": 1
+          },
+          {
+            "id": 1,
+            "answer": "Užíváte si je coby výzvy.",
+            "value": 3
+          },
+          {
+            "id": 2,
+            "answer": "Rádi se na věc podíváte z různých pohledů.",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Kdo obvykle vyvolává konflikt?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Vy, zbožňujete vášnivé debaty.",
+            "value": 3
+          },
+          {
+            "id": 1,
+            "answer": "Vy, pokud je to pro vás důležité nebo někdo napadne hodnoty, které vyznáváte.",
+            "value": 2
+          },
+          {
+            "id": 2,
+            "answer": "Nikdy byste konflikt nevyvolali.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "Co děláte během hádky?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Argumentujete tak, abyste situaci uklidnili a všichni byli spokojeni.",
+            "value": 2
+          },
+          {
+            "id": 1,
+            "answer": "Jste potichu.",
+            "value": 1
+          },
+          {
+            "id": 2,
+            "answer": "Neoblomně hájíte své myšlenky a hádku chcete vyřešit co nejdříve.",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "Pokud někdo pomlouvá vašeho blízkého:",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Ignorujete to.",
+            "value": 1
+          },
+          {
+            "id": 1,
+            "answer": "Osobu konfrontujete a poukážete na nízkost pomlouvání.",
+            "value": 3
+          },
+          {
+            "id": 2,
+            "answer": "Snažíte se, aby vašeho blízkého dotyčný viděl tak, jako ho vidíte vy.",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "Když nakupujete s přítelem:",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Nadiktujete mu, co chcete. Už jste se rozhodli.",
+            "value": 3
+          },
+          {
+            "id": 1,
+            "answer": "Oba sepíšete seznam požadavků a společně se dohodnete.",
+            "value": 2
+          },
+          {
+            "id": 2,
+            "answer": "Poslechnete si, co chce přítel, a přizpůsobíte se.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "Někdo uráží vašeho přítele/kolegu...:",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Rozpačitě se vypaříte, určitě by nechtěli, abyste to viděl.",
+            "value": 1
+          },
+          {
+            "id": 1,
+            "answer": "Vložíte se do toho a začnete přítele zuřivě bránit.",
+            "value": 3
+          },
+          {
+            "id": 2,
+            "answer": "Zeptáte se, zda nepotřebují pomoct problém vyřešit.",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "Co uděláte, když zjistíte, že vás někam nepozvali?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Všem vyprávíte, jak jste zklamaní, a dáte jasně najevo, že vy je příště také nikam nepozvete.",
+            "value": 3
+          },
+          {
+            "id": 1,
+            "answer": "Přepokládáte, že pro to mají rozumný důvod, a necháte to být.",
+            "value": 1
+          },
+          {
+            "id": 2,
+            "answer": "Zavoláte jim a zeptáte se, zda vás jen opomenuli nebo mají už mnoho hostů.",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "question": "Pokud o vás někdo mluví negativně:",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Vezmete si ho stranou, vysvětlíte mu, jak se kvůli tomu cítíte, a zeptáte se, jak můžete jeho názor změnit.",
+            "value": 3
+          },
+          {
+            "id": 1,
+            "answer": "Konfrontujete ho a přemýšlíte, co negativního řeknete o něm.",
+            "value": 2
+          },
+          {
+            "id": 2,
+            "answer": "Doufáte, že to přejde.",
+            "value": 1
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "id": 0,
+        "points": "1-12",
+        "result": "KONFLIKTŮ SE STRANÍTE",
+        "description": "Snažíte se konfliktům vyhýbat. Problémům se vyhýbáte a raději neuděláte nic, než abyste problém řešili. Často cítíte frustraci, že vás nikdo neposlouchá, ale představa, že byste se ozvali, vás děsí. Vaší přirozenou reakcí na konflikt je utéct nebo ukrýt se, popřípadě se podvolíte, abyste unikli diskusi. Postupem času si však připadáte čím dál nešťastnější, a tedy i vystresovanější, až nakonec vybuchnete. Snažte se svůj názor vyjadřovat alespoň v méně vypjatých situacích a konfliktům se nevyhýbejte."
+      },
+      {
+        "id": 1,
+        "points": "13-24",
+        "result": "FUNGUJETE JAKO MÍROTVŮRCE",
+        "description": "Chcete, aby měl každý svůj hlas, a toužíte najít řešení přijatelné pro všechny. Věříte, že každý spor se dá vyřešit diskusí. Vždy se snažíte najít řešení a k problémům přistupujete střízlivě a pozitivně. Své názory vyjadřujete sebejistě, ale zároveň nasloucháte ostatním. Když dojde ke konfliktu, snažíte se vidět situaci z pohledu všech zúčastněných. Použijete výmluvnost, aby byl každý spokojený a řešení bylo přijatelné pro všechny. Víte ale, že občas se ujme vedení konfliktní osoba, a v takovém případě je pro vás těžké přijmout její řešení, abyste se vyhnuli sporu."
+      },
+      {
+        "id": 2,
+        "points": "25-36",
+        "result": "JSTE BULDOZER",
+        "description": "Víte, co chcete, a konfliktu se nebojíte. V konfliktech se vyžíváte a víte, jak prosadit svůj názor. Někteří vás vnímají jako agresora, který jim může ublížit slovně či fyzicky. Někdy vyvoláte konflikt jen tak pro zábavu a divíte se, že si to ostatní berou tak osobně. Věříte, že nejlepší je všechno si vyříkat a hra na d'áblova advokáta může přinést nové nápady nebo vyřešit problémy. Snažíte se tedy vyvolat diskusi, ale zároveň nasloucháte ostatním, abyste na problém nahlíželi z více úhlů."
+      }
+    ]
   },
   {
     "id": 1,
-    "title": "Jste introvert?",
-    "time": 10,
-    "numberOfQuestions": 12,
-    "img": "/images/extrov.png"
+    "title": "Jaký máte vztah k penězům?",
+    "minutes": 18,
+    "img": "/images/shopper.png",
+    "questions": [
+      {
+        "id": 0,
+        "question": "Váš mobil má rozbitý displej a končí vám k němu záruka, potřebujete ho tedy vyměnit. Co uděláte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Pořídíte si nejnovější dostupný model - chcete nejnovější technologie a na ceně vám nesejde.",
+            "value": 3
+          },
+          {
+            "id": 1,
+            "answer": "Strávíte co nejvíc času hledáním možností, jak záruku prodloužit, a zvažujete, zda si pořídit nový, nebo repasovaný mobil. Starý mobil si necháte co nejdéle, i kdybyste ho měli slepit izolepou.",
+            "value": 1
+          },
+          {
+            "id": 2,
+            "answer": "Zamyslíte se nad tím, co potřebujete a kde můžete sehnat produkt za podobnou cenu. Mobil sice potřebujete, ale nemusí to být nejnovější model.",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "question": "Právě jste v práci získali obrovskou odměnu - co uděláte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Dopřejete si něco, co vážně chcete, a zbytek peněz si uložíte nebo splatíte dluhy.",
+            "value": 2
+          },
+          {
+            "id": 1,
+            "answer": "Vše investujete do penze.",
+            "value": 1
+          },
+          {
+            "id": 2,
+            "answer": "Naplánujete si víkend plný nakupování - pracovali jste tvrdě, takže je čas si to pořádně užít.",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Když jdete nakupovat:",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Sepíšete si seznam všeho, co potřebujete, vyhledáte si obchody s daným zbožím, zkontrolujete ceny na internetu a najdete nejefektivnější způsob, jak položky získat co nejvýhodněji.",
+            "value": 3
+          },
+          {
+            "id": 1,
+            "answer": "Zkontrolujete, kolik peněz máte k dispozici, a poté nakupujete dle libosti - nakupování milujete.",
+            "value": 1
+          },
+          {
+            "id": 2,
+            "answer": "Nastavíte si, kolik můžete daný den utratit. Myslíte na to, co doopravdy potřebujete, ale nejste na sebe příliš tvrdí.",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Dostali jste pozvání na svatbu, která se koná daleko, a budete tedy muset někde přenocovat. Co uděláte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Zarezervujete si ten nejdražší pokoj ve svatebním hotelu, před svatbou vyrazíte do lázní a také to bude skvělá příležitost pořídit si něco nového na sebe.",
+            "value": 3
+          },
+          {
+            "id": 1,
+            "answer": "Rozhodnete se jet, ale pouze na jeden den. Odejdete dřív, abyste nemuseli platit za noc v hotelu. Outfit poskládáte z toho, co máte ve skříni.",
+            "value": 1
+          },
+          {
+            "id": 2,
+            "answer": "Těšíte se, ale přenocujete v levnějším hotelu poblíž místa svatby. Možná si pořídíte nové doplňky, abyste doplnili svůj stávající outfit.",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Vaše novoroční předsevzetí je dostat se do formy. Co uděláte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Koupíte si nové sportovní oblečení, boty a roční členství do moderní posilovny (i když je vám jasné, že budete chodit maximálně na bar).",
+            "value": 3
+          },
+          {
+            "id": 1,
+            "answer": "Vyhrabete staré sportovní oblečení a objednáte se na pár ukázkových lekcí v místním sportovním středisku, abyste zjistili, co vám vyhovuje.",
+            "value": 2
+          },
+          {
+            "id": 2,
+            "answer": "Vyhrabete staré tenisky a sportovní oblečení a každý den si půjdete zaběhat.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Právě jste dostali výplatu - jak s ní naložíte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Zaplatíte účty a dluhy, zainvestujete a část vložíte na spoření. Pořídíte si jen to nejnutnější.",
+            "value": 3
+          },
+          {
+            "id": 1,
+            "answer": "Zaplatíte účty, zainvestujete a část vložíte na spoření, dluhy nemáte. Rozhodnete se, co je potřeba koupit, a dáte si na to peníze stranou.",
+            "value": 2
+          },
+          {
+            "id": 2,
+            "answer": "Vyrazíte na nákupy a/nebo ven s přáteli.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "Plánujete dovolenou ke speciální příležitosti. Co uděláte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Zvážíte své úspory a kolik můžete za dovolenou utratit. Zarezervujete si takovou dovolenou, na kterou vám stačí rozpočet.",
+            "value": 1
+          },
+          {
+            "id": 1,
+            "answer": "Chcete, aby dovolená byla opravdu speciální a nezapomenutelná, použijete tedy své úspory i kreditní kartu. Předem ale víte, jak vše splatíte.",
+            "value": 2
+          },
+          {
+            "id": 2,
+            "answer": "Najdete si vysněnou destinaci a letovisko - jedná se o výjimečnou událost, kterou je třeba náležitě oslavit se vším všudy, včetně nového oblečení. Vše neůžete zaplatit kreditní kartou. Žijeme přece jen jednou.",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "Na poslední chvíli vám zavolají přátelé, že chtějí něco podniknout, je však konec měsíce a vy už jste utratili všechny peníze. Co uděláte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Pozvete je na návštěvu s tím, že si objednáte donášku jídla, protože víte, že ostatní jsou na suchu.",
+            "value": 2
+          },
+          {
+            "id": 1,
+            "answer": "Odmítnete, nemáte peníze a můžete si vyrazit jindy, až něco našetříte.",
+            "value": 1
+          },
+          {
+            "id": 2,
+            "answer": "Vytáhnete kreditní kartu - tenhle měsíc byl šílený a vy se potřebujete odreagovat. Splatíte to příští měsíc.",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "Co míváte v práci k obědu?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Někdy si nosíte jídlo z domu a někdy si jídlo kupujete.",
+            "value": 2
+          },
+          {
+            "id": 1,
+            "answer": "Chodíte s kolegy do místní restaurace.",
+            "value": 3
+          },
+          {
+            "id": 2,
+            "answer": "Vždy si přinesete vlastní oběd z domu.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "Je čas na nákup potravin. Co uděláte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Sepíšete si detailní seznam všech jídel na nadcházející týden, zkontrolujete, které ingredience máte, a zbytek dokoupíte.",
+            "value": 1
+          },
+          {
+            "id": 1,
+            "answer": "Nakoupíte, co se vám zachce, doma si stejně objednáte donášku, protože vaření nesnášíte.",
+            "value": 3
+          },
+          {
+            "id": 2,
+            "answer": "Napadá vás, co byste chtěli uvařit, ale nejprve zkontrolujete zboží ve slevě a uvaříte něco z toho, co najdete.",
+            "value": 2
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "Hledáte nové místo k životu a najdete svůj vysněný dům, je však mimo vaše finanční možnosti. Co uděláte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Učiníte prodejci nabídku - nějak už přijdete na způsob, jak za dům zaplatíte.",
+            "value": 3
+          },
+          {
+            "id": 1,
+            "answer": "Hledáte způsob, jak si přivydělat - možná byste mohli pronajímat pokoj, najít si další práci nebo něco prodat.",
+            "value": 2
+          },
+          {
+            "id": 2,
+            "answer": "Dům je mimo vaše finanční možnosti, pokusíte se tedy najít něco menšího v jiné oblasti, co bude více vyhovovat vašemu rozpočtu.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "question": "Objeví se nečekaný výdaj - co uděláte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Vezmete peníze z nouzového fondu - od toho tu přeci je.",
+            "value": 1
+          },
+          {
+            "id": 1,
+            "answer": "Část zaplatíte z našetřených peněz a část kreditní kartou. Výdaj jste nečekali a zaskočil vás, ale přesně pro takové případy kreditní kartu máte.",
+            "value": 2
+          },
+          {
+            "id": 2,
+            "answer": "Panikaříte, kreditní kartu jste už přečerpali, takže přemýšlíte, od koho si můžete půjčit peníze.",
+            "value": 3
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "id": 0,
+        "points": "12-19",
+        "result": "JSTE SKROMNÍ",
+        "description": "Utratíte jen to, co musíte. Váš vztah k penězům je o šetření, ale často na úkor zábavy. Neradi riskujete, a pokud na něco nemáte peníze, nepořídíte si to. Vystačíte si s málem a chcete si být jistí, že máte našetřeno dost na důchod. Je skvělé, že si dáváte takový pozor, nesmíte však zapomenout trochu žít. Uvědomte si, že je v pořádku chtít víc. Možná byste si mohli založit speciální účet, kam si budete ukládat peníze určené na zábavu. Pokuste se začít žít přítomností."
+      },
+      {
+        "id": 1,
+        "points": "20-27",
+        "result": "UMÍTE ŠETŘIT I UTRÁCET",
+        "description": "Víte, co obnáší život. Život si máme užít, ale vy také víte, že s penězi je třeba zacházet opatrně, abyste se uměli vypořádat s těžkými životními situacemi. I když si spoříte a snažíte se plánovat, také si chcete užívat, protože nikdy nevíte, co budoucnost přinese. Jedná se o zdravý vztah a znamená to, že se dokážete bavit a zároveň se nemusíte strachovat o svou budoucnost. S vaším přístupem se nemusíte bát žít okamžikem."
+      },
+      {
+        "id": 2,
+        "points": "28-36",
+        "result": "ROZHAZUJETE",
+        "description": "Žijete okamžikem. Milujete život a utrácíte, abyste se odměnili za svou tvrdou práci. Jakmile vám přijdou peníze, už je máte dávno utracené nebo přemýšlíte, jak byste je mohli utratit. Nemáte žádné úspory a neustále si děláte starosti, jak zaplatíte účty a dluhy. Zamyslete se nad svým přístupem k penězům a nad tím, odkud se bere vaše touha utrácet je bez rozmyšlení. Je dobré se bavit, ale pokud člověk utrácí příliš, často to souvisí s potlačenými emocemi, které pramení z touhy po uznání nebo slouží jako mechanismus, jak se vyrovnat s životním údělem."
+      }
+    ]
   },
   {
     "id": 2,
-    "title": "Jste konfliktní typ?",
-    "time": 10,
-    "numberOfQuestions": 12,
-    "img": "/images/extrov.png"
+    "title": "Jste k sobě úpřímní?",
+    "minutes": 15,
+    "img": "/images/optimist.png",
+    "questions": [
+      {
+        "id": 0,
+        "question": "Přítel vás zasypává zprávami, že s vámi potřebuje mluvit, ale vy tušíte, že to nejspíš jako obvykle nebude důležité. Co uděláte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Zavoláte později, až budete mít víc času.",
+            "value": 4
+          },
+          {
+            "id": 1,
+            "answer": "Zavoláte mu ihned.",
+            "value": 3
+          },
+          {
+            "id": 2,
+            "answer": "Ignorujete ho a později se vymluvíte, že jste byli na schůzce.",
+            "value": 2
+          },
+          {
+            "id": 3,
+            "answer": "Ignorujete ho, a když se potkáte, řeknete, že vám žádné zprávy nepřišly.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 1,
+        "question": "Někdo se vám začne líbit - pozvete ho na rande?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Ano, přinejhorším odmítne.",
+            "value": 4
+          },
+          {
+            "id": 1,
+            "answer": "Pozvete ho na přátelskou skleničku, abyste viděli, jestli má zájem.",
+            "value": 3
+          },
+          {
+            "id": 2,
+            "answer": "Ne, ale tajně ho sledujete na sociálních sítích a snažíte se vymyslet, jak na něj náhodně narazit.",
+            "value": 2
+          },
+          {
+            "id": 3,
+            "answer": "Ne, je to úplně jiná liga. Jste přesvědčeni, že by se na vás ani nepodíval, takže to necháte být.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "Partner vám koupí dárek, ale vám se nelíbí. Co uděláte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Řeknete mu, jakou máte radost, dárek schováte do šuplíku a poté darujete charitě.",
+            "value": 1
+          },
+          {
+            "id": 1,
+            "answer": "Poděkujete a předstíráte radost, později se ale prozradíte.",
+            "value": 2
+          },
+          {
+            "id": 2,
+            "answer": "Řeknete, že se jedná o vadný produkt a že budete požadovat opravu, máte však v plánu ho vyměnit.",
+            "value": 3
+          },
+          {
+            "id": 3,
+            "answer": "Zdvořile vysvětlíte, že to není nic pro vás, a navrhnete dárek vrátit a vyměnit za jiný.",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "Dostali jste pozvánku na dovolenou na místo, kam se vám úplně nechce. Co uděláte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Zdvořile odmítnete a vysvětlíte, že to není pro vás.",
+            "value": 4
+          },
+          {
+            "id": 1,
+            "answer": "Slíbíte, že se ještě ozvete, protože momentálně nevíte, zda budete mít čas.",
+            "value": 3
+          },
+          {
+            "id": 2,
+            "answer": "Souhlasíte, ale později přijdete s výmluvou, proč nemůžete.",
+            "value": 2
+          },
+          {
+            "id": 3,
+            "answer": "Neochotně souhlasíte, protože víte, že jste tam stejně jen do počtu.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "Čtete nabídku vaší vysněné práce, ale splňujete pouze polovinu požadavků. Co uděláte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "O místo se ucházet nebudete, polovina požadavků nestačí.",
+            "value": 1
+          },
+          {
+            "id": 1,
+            "answer": "V životopisu i v průvodním dopisu lžete - stačí, když vás to dostane tam, kam chcete.",
+            "value": 2
+          },
+          {
+            "id": 2,
+            "answer": "Přihlásíte se, v průvodním dopisu se vyjadřujete jen neurčitě a doufáte, že si toho nevšimnou.",
+            "value": 3
+          },
+          {
+            "id": 3,
+            "answer": "Přihlásíte se i tak, v průvodním dopisu jste upřímní, protože nikdo není dokonalý a vy nemáte co ztratit.",
+            "value": 4
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "Když se vás někdo zeptá na vaši práci:",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Přesně popíšete její náplň.",
+            "value": 4
+          },
+          {
+            "id": 1,
+            "answer": "Zlehčujete ji.",
+            "value": 2
+          },
+          {
+            "id": 2,
+            "answer": "Zaměníte téma.",
+            "value": 1
+          },
+          {
+            "id": 3,
+            "answer": "Popíšete ji zajímavější, než jaká ve skutečnosti je.",
+            "value": 3
+          }
+        ]
+      },
+      {
+        "id": 6,
+        "question": "Mluvit pravdu vám přijde:",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Většinou jako nejlepší řešení, ale ne vždy.",
+            "value": 4
+          },
+          {
+            "id": 1,
+            "answer": "Dobré předem zvážit.",
+            "value": 2
+          },
+          {
+            "id": 2,
+            "answer": "Jako něco neexistujícího, protože každý máme svou verzi pravdy.",
+            "value": 3
+          },
+          {
+            "id": 3,
+            "answer": "Naprosto zásadní, lhaní se nedá ospravedlnit.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 7,
+        "question": "Jak snadno sdílíte a prosazujete svůj názor?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Velmi snadno.",
+            "value": 4
+          },
+          {
+            "id": 1,
+            "answer": "Většinu času to zvládáte.",
+            "value": 3
+          },
+          {
+            "id": 2,
+            "answer": "Záleží na okolnostech.",
+            "value": 2
+          },
+          {
+            "id": 3,
+            "answer": "Máte s tím problém, protože nevíte, jestli na vašem názoru záleží.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 8,
+        "question": "Jak často sdílíte s ostatními detaily ze svého osobního života?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Velmi často - rádi se o ně dělíte a posloucháte také ostatní, je to důležité.",
+            "value": 4
+          },
+          {
+            "id": 1,
+            "answer": "Zřídka - sdílíte je pouze s těmi nejbližšími.",
+            "value": 2
+          },
+          {
+            "id": 2,
+            "answer": "Často - ale pouze s těmi, kdo detaily z osobního života taktéž sdílí.",
+            "value": 3
+          },
+          {
+            "id": 3,
+            "answer": "Nikdy - nikomu do toho nic není.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 9,
+        "question": "Oblečení si vybíráte na základě:",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Toho, co se hodí k vašemu postavení.",
+            "value": 2
+          },
+          {
+            "id": 1,
+            "answer": "Toho, co je v módě, ať už vám to sedí, nebo ne.",
+            "value": 3
+          },
+          {
+            "id": 2,
+            "answer": "Toho, co vám nejvíc sedí, rádi vyčníváte.",
+            "value": 4
+          },
+          {
+            "id": 3,
+            "answer": "Toho, co vám pomůže splynout s okolím.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 10,
+        "question": "Řídíte se zdravým jídelníčkem, ale jeden den si dáte něco nezdravého. Co uděláte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Netrápíte se tím, nikdo není dokonalý.",
+            "value": 4
+          },
+          {
+            "id": 1,
+            "answer": "Vyčítáte si to a snažíte se nezdravé jídlo vyvážit tím, že se vrátíte zpět ke své dietě.",
+            "value": 3
+          },
+          {
+            "id": 2,
+            "answer": "Na pár dní to vzdáte, ale plánujete se ke zdravému jídelníčku za měsíc opět vrátit.",
+            "value": 2
+          },
+          {
+            "id": 3,
+            "answer": "Vzdáte to a přestanete jíst zdravě, nemáte na to.",
+            "value": 1
+          }
+        ]
+      },
+      {
+        "id": 11,
+        "question": "Když se vás doktor zeptá, jak moc pijete a kouříte, jak odpovíte?",
+        "answers": [
+          {
+            "id": 0,
+            "answer": "Lžete a řeknete, že vůbec.",
+            "value": 1
+          },
+          {
+            "id": 1,
+            "answer": "Udáte poloviční číslo.",
+            "value": 2
+          },
+          {
+            "id": 2,
+            "answer": "Čísla si trochu přibarvíte, ale skoro to odpovídá.",
+            "value": 3
+          },
+          {
+            "id": 3,
+            "answer": "Odpovíte upřímně, nemáte co skrývat.",
+            "value": 4
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "id": 0,
+        "points": "12-24",
+        "result": "PODPRŮMĚR",
+        "description": "Nejste k sobě upřímní. Je tak snadné dělat to, co bychom podle nás dělat měli, než k sobě být upřímní. Lžete ostatním o tom, co jíte, jak cvičíte, co pijete. Ale Ižete jenom sami sobě. Je těžké být k sobě upřímný, ale kdo jiný k nám má být upřímný než právě my sami? Začněte malými krůčky. Jste upřímní? Co lze udělat pro to, abyste byli otevřenější? Proč máte pocit, že musíte sobě a ostatním lhát?"
+      },
+      {
+        "id": 1,
+        "points": "25-36",
+        "result": "PRŮMĚR",
+        "description": "Jste k sobě stále upřímnější. Většina lidí zažívá dny, kdy k sobě nedokážou být upřímní. Jak často jste přemýšleli o tom, že váš život není takový, jak byste chtěli? Takové myšlenky má každý. Nalháváme si, proč bychom měli něco dělat, místo abychom dělali něco, co opravdu chceme a co je pro nás to správné. Buďte k sobě každý den upřímnější a váš život se od základu změní."
+      },
+      {
+        "id": 2,
+        "points": "37-48",
+        "result": "NADPRŮMĚR",
+        "description": "Jste k sobě upřímní a otevření. Naučili jste se, že pokud nejste upřímní k tomu, jak se cítíte, jak vypadáte a co děláte, nemůžete být upřímní ani k okolnímu světu. Zjistili jste, že upřímnost vede k osvobození od břemene toho, co byste měli dělat. Teprve pak dokážete rozpoznat své silné stránky, ovládnout svůj strach, mít vše pod kontrolou, a díky tomu žít autentický život."
+      }
+    ]
   }
 ]
