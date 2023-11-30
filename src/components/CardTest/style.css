@@ -1,10 +1,11 @@
 .cardTest__image {
   width: 100%;
   text-align: center;
+  padding: 15px;
 }
 
 .cardTest__image img {
-  max-width: 300px;
+  max-width: 150px;
   width: 100%;
 }
 
