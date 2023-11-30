@@ -1,30 +1,28 @@
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/effect-cards';
-import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+
 import './style.css';
 
-import { EffectCards, Pagination, Navigation } from 'swiper/modules';
+// import required modules
+import { EffectCards, Navigation } from 'swiper/modules';
 
 export const QuestionsPage = () => {
   return (
     <div className="swiper">
       <Swiper
-        // install Swiper modules
-        modules={[EffectCards, Navigation]}
+        effect={'cards'}
+        navigation
         grabCursor={true}
+        modules={[EffectCards, Navigation]}
         centeredSlides={true}
         slidesPerView={3}
-        effect="cards"
-        spaceBetween={50}
-        navigation
-        pagination={{ clickable: true }}
-        scrollbar={{ draggable: true }}
-        onSwiper={(swiper) => console.log(swiper)}
-        onSlideChange={() => console.log('slide change')}
+        className="mySwiper"
       >
         <div className="swiper-wrapper">
           <SwiperSlide>
