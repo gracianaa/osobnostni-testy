@@ -1,0 +1,27 @@
+.resultCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.368);
+  box-shadow: var(--shadow);
+  padding: 30px;
+  width: 90%;
+  margin: 15px auto;
+  gap: 15px;
+}
+
+
+.buttonShare {
+  display: flex;
+  width: 140px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonShare__image {
+  flex-basis: 15%;
+}
+
+.buttonShare__image img {
+  width: 100%;
+}
