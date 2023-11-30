@@ -3,7 +3,7 @@
     "id": 0,
     "title": "Jste konfliktní typ?",
     "minutes": 10,
-    "img": "/images/extrov.png",
+    "img": "/images/conIcon.png",
     "questions": [
       {
         "id": 0,
@@ -283,7 +283,7 @@
     "id": 1,
     "title": "Jaký máte vztah k penězům?",
     "minutes": 18,
-    "img": "/images/shopper.png",
+    "img": "/images/monIcon.png",
     "questions": [
       {
         "id": 0,
@@ -563,7 +563,7 @@
     "id": 2,
     "title": "Jste k sobě úpřímní?",
     "minutes": 15,
-    "img": "/images/optimist.png",
+    "img": "/images/honIcon.png",
     "questions": [
       {
         "id": 0,
