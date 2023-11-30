@@ -1,9 +1,10 @@
 import { Outlet } from 'react-router-dom';
+import tests from '../../../tests.json';
 
 export const TestPage = () => {
   return (
     <div>
-      <h3>Test Page</h3>
+      <h1>{tests[0].title}</h1>
       <Outlet />
     </div>
   );
