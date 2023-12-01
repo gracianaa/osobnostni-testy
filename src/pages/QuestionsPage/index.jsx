@@ -35,7 +35,7 @@ export const QuestionsPage = () => {
               <ol className="answers">
                 {questions[question.id].answers.map((answer) => (
                   <li className="answers__answer" key={answer.id}>
-                    {answer.answer}
+                    <p className="answers__text">{answer.answer}</p>
                   </li>
                 ))}
               </ol>

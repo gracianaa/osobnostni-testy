@@ -12,8 +12,8 @@
   color: #fff;
 }
 
-ol {
-  padding: 20px;
+.answers {
+  padding: 40px;
 }
 
 .question__title {
@@ -21,5 +21,52 @@ ol {
 }
 
 .answers {
-  list-style-type: lower-alpha;
+  list-style-type: none;
+  text-align: left;
+}
+
+.answers__answer {
+  position: relative;
+  padding: 15px;
+  margin: 15px;
+}
+
+.answers__answer::before {
+  content: counter(list-item, lower-alpha);
+  position: relative;
+  left: -10px;
+  top: -50%;
+  transform: translateY(0);
+  background-color: white;
+  color: var(--color-primary);
+  box-shadow: var(--shadow);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-primary);
+  font-size: 25px;
+  vertical-align: middle;
+  /* Align with the baseline */
+  float: left;
+}
+
+.answers__answer:hover,
+.answers__answer:active {
+  font-weight: bolder;
+  background-color: rgba(255, 255, 255, 0.138);
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+}
+
+.answers__answer:hover::before {
+  background-color: var(--color-secondary);
+  color: white;
+  box-shadow: none;
+}
+
+.answers__text {
+  overflow: hidden;
 }
