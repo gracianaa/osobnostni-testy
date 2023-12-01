@@ -28,13 +28,15 @@ export const QuestionsPage = () => {
         slidesPerView={3}
         className="mySwiper"
       >
-        <div className="swiper-wrapper">
+        <div>
           {questions.map((question) => (
             <SwiperSlide key={question.id}>
               <h3 className="question__title">{question.question}</h3>
-              <ol>
+              <ol className="answers">
                 {questions[question.id].answers.map((answer) => (
-                  <li key={answer.id}>{answer.answer}</li>
+                  <li className="answers__answer" key={answer.id}>
+                    {answer.answer}
+                  </li>
                 ))}
               </ol>
             </SwiperSlide>
