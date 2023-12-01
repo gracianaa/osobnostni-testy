@@ -23,15 +23,15 @@ export const Menu = ({ onToggleMenu, menuOpened }) => {
           menuOpened ? 'menu__draver' : 'menu__draver menu__draver--closed'
         }
       >
-        <MenuItem onSelect={handleClick} id="#chooseTest" text="Výběr testů" />
+        <MenuItem onSelect={handleClick} id="/#chooseTest" text="Výběr testů" />
         <MenuItem
           onSelect={handleClick}
-          id="#aboutPersonality"
+          id="/#aboutPersonality"
           text="Osobnost"
         />
         <MenuItem
           onSelect={handleClick}
-          id="#howItWorks"
+          id="/#howItWorks"
           text="Práce s testy"
         />
       </div>

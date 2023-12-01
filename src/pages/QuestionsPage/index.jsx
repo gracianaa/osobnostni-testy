@@ -15,6 +15,8 @@ import { EffectCards, Navigation } from 'swiper/modules';
 
 export const QuestionsPage = () => {
   const test = useOutletContext();
+  const questions = test.questions;
+
   return (
     <div className="swiper">
       <Swiper
@@ -27,38 +29,16 @@ export const QuestionsPage = () => {
         className="mySwiper"
       >
         <div className="swiper-wrapper">
-          <SwiperSlide>
-            <h1>{test.title}</h1>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-          </SwiperSlide>
-          <SwiperSlide>
-            <h1>Nadpis2</h1>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-          </SwiperSlide>
-          <SwiperSlide>
-            <h1>Nadpis3</h1>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-          </SwiperSlide>
-          <SwiperSlide>
-            <h1>Nadpis4</h1>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-            <h3>Otazka</h3>
-          </SwiperSlide>
+          {questions.map((question) => (
+            <SwiperSlide key={question.id}>
+              <h3 className="question__title">{question.question}</h3>
+              <ol>
+                {questions[question.id].answers.map((answer) => (
+                  <li key={answer.id}>{answer.answer}</li>
+                ))}
+              </ol>
+            </SwiperSlide>
+          ))}
         </div>
       </Swiper>
     </div>
