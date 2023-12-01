@@ -14,7 +14,7 @@ export const CardTest = ({ test }) => {
       <div className="cardTest__image">
         <img src={test.img} alt={test.title} />
       </div>
-      <Link to="/test">
+      <Link to={`/test/${test.id}`}>
         <ButtonSecondary>Spustit test</ButtonSecondary>
       </Link>
     </div>

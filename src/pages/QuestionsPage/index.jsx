@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react';
+import { useOutletContext } from 'react-router-dom';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -13,6 +14,7 @@ import './style.css';
 import { EffectCards, Navigation } from 'swiper/modules';
 
 export const QuestionsPage = () => {
+  const test = useOutletContext();
   return (
     <div className="swiper">
       <Swiper
@@ -26,7 +28,7 @@ export const QuestionsPage = () => {
       >
         <div className="swiper-wrapper">
           <SwiperSlide>
-            <h1>Nadpis1</h1>
+            <h1>{test.title}</h1>
             <h3>Otazka</h3>
             <h3>Otazka</h3>
             <h3>Otazka</h3>
