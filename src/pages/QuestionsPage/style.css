@@ -1,19 +1,24 @@
 .swiper {
-  width: 100%;
+  max-width: 100%;
 }
 
 .swiper-slide {
   flex-grow: 1;
-  width: 100%;
-  height: 700px;
+  max-width: 600px;
+  width: 70%;
+  /* height: 100vh; */
   background-color: var(--color-primary);
   border-radius: 18px;
   font-size: 22px;
   color: #fff;
+  padding: 30px;
 }
 
 .answers {
-  padding: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
 }
 
 .question__title {
@@ -28,7 +33,6 @@
 .answers__answer {
   position: relative;
   padding: 15px;
-  margin: 15px;
 }
 
 .answers__answer::before {
@@ -51,6 +55,7 @@
   vertical-align: middle;
   /* Align with the baseline */
   float: left;
+  /* margin-left: 10px; */
 }
 
 .answers__answer:hover,
@@ -59,6 +64,7 @@
   background-color: rgba(255, 255, 255, 0.138);
   border-radius: 15px;
   box-shadow: var(--shadow);
+
 }
 
 .answers__answer:hover::before {

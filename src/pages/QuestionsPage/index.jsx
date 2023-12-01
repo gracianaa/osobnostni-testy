@@ -25,7 +25,7 @@ export const QuestionsPage = () => {
         grabCursor={true}
         modules={[EffectCards, Navigation]}
         centeredSlides={true}
-        slidesPerView={3}
+        slidesPerView={'auto'}
         className="mySwiper"
       >
         <div>
