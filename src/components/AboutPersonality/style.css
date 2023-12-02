@@ -1,0 +1,8 @@
+.aboutPersonality {
+  display: flex;
+  flex-direction: column;
+}
+
+.aboutPersonality__info {
+  margin-bottom: 20px;
+}
