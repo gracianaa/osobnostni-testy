@@ -66,9 +66,8 @@ export const QuestionsPage = () => {
     <div className="swiper">
       <Swiper
         effect={'cards'}
-        navigation
         grabCursor={true}
-        modules={[EffectCards, Navigation]}
+        modules={[EffectCards]}
         centeredSlides={true}
         slidesPerView={'auto'}
         className="mySwiper"
