@@ -12,6 +12,7 @@ import './style.css';
 
 // import required modules
 import { EffectCards, Navigation } from 'swiper/modules';
+import { AnswerList } from '../../components/AnswerList';
 
 export const QuestionsPage = () => {
   const test = useOutletContext();
@@ -34,9 +35,7 @@ export const QuestionsPage = () => {
               <h3 className="question__title">{question.question}</h3>
               <ol className="answers">
                 {questions[question.id].answers.map((answer) => (
-                  <li className="answers__answer" key={answer.id}>
-                    <p className="answers__text">{answer.answer}</p>
-                  </li>
+                  <AnswerList key={answer.id} answer={answer} />
                 ))}
               </ol>
             </SwiperSlide>
