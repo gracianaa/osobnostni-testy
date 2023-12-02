@@ -31,17 +31,17 @@
         "question": "Abyste vyřešili spor:",
         "answers": [
           {
-            "id": 0,
+            "id": 3,
             "answer": "Domluvíte se na kompromisu.",
             "value": 2
           },
           {
-            "id": 1,
+            "id": 4,
             "answer": "Vyhovíte druhé straně.",
             "value": 1
           },
           {
-            "id": 2,
+            "id": 5,
             "answer": "Budete si stát tvrdě za svým.",
             "value": 3
           }
@@ -52,17 +52,17 @@
         "question": "Během konfliktu:",
         "answers": [
           {
-            "id": 0,
+            "id": 6,
             "answer": "Vždy se snažíte směřovat konverzaci pozitivním směrem.",
             "value": 2
           },
           {
-            "id": 1,
+            "id": 7,
             "answer": "Držíte se faktů a vyhýbáte se emocím.",
             "value": 3
           },
           {
-            "id": 2,
+            "id": 8,
             "answer": "Snažíte se být nenápadní, protože je vám takový stres nepříjemný.",
             "value": 1
           }
@@ -73,17 +73,17 @@
         "question": "Když se nemůžete dohodnout:",
         "answers": [
           {
-            "id": 0,
+            "id": 9,
             "answer": "Zůstanete klidní a rozvážní a snažíte se najít řešení vhodné pro všechny.",
             "value": 2
           },
           {
-            "id": 1,
+            "id": 10,
             "answer": "Snažíte se dál diskutovat, a pokud nikdo nerozhodne, rozhodnete sami.",
             "value": 3
           },
           {
-            "id": 2,
+            "id": 11,
             "answer": "Podřídíte se ostatním.",
             "value": 1
           }
@@ -94,17 +94,17 @@
         "question": "Co si myslíte o konfliktech?",
         "answers": [
           {
-            "id": 0,
+            "id": 12,
             "answer": "Jsou stresující a vyvolávají ve vás úzkost.",
             "value": 1
           },
           {
-            "id": 1,
+            "id": 13,
             "answer": "Užíváte si je coby výzvy.",
             "value": 3
           },
           {
-            "id": 2,
+            "id": 14,
             "answer": "Rádi se na věc podíváte z různých pohledů.",
             "value": 2
           }
@@ -115,17 +115,17 @@
         "question": "Kdo obvykle vyvolává konflikt?",
         "answers": [
           {
-            "id": 0,
+            "id": 15,
             "answer": "Vy, zbožňujete vášnivé debaty.",
             "value": 3
           },
           {
-            "id": 1,
+            "id": 16,
             "answer": "Vy, pokud je to pro vás důležité nebo někdo napadne hodnoty, které vyznáváte.",
             "value": 2
           },
           {
-            "id": 2,
+            "id": 17,
             "answer": "Nikdy byste konflikt nevyvolali.",
             "value": 1
           }
@@ -136,17 +136,17 @@
         "question": "Co děláte během hádky?",
         "answers": [
           {
-            "id": 0,
+            "id": 18,
             "answer": "Argumentujete tak, abyste situaci uklidnili a všichni byli spokojeni.",
             "value": 2
           },
           {
-            "id": 1,
+            "id": 19,
             "answer": "Jste potichu.",
             "value": 1
           },
           {
-            "id": 2,
+            "id": 20,
             "answer": "Neoblomně hájíte své myšlenky a hádku chcete vyřešit co nejdříve.",
             "value": 3
           }
@@ -157,17 +157,17 @@
         "question": "Pokud někdo pomlouvá vašeho blízkého:",
         "answers": [
           {
-            "id": 0,
+            "id": 21,
             "answer": "Ignorujete to.",
             "value": 1
           },
           {
-            "id": 1,
+            "id": 22,
             "answer": "Osobu konfrontujete a poukážete na nízkost pomlouvání.",
             "value": 3
           },
           {
-            "id": 2,
+            "id": 23,
             "answer": "Snažíte se, aby vašeho blízkého dotyčný viděl tak, jako ho vidíte vy.",
             "value": 2
           }
@@ -178,17 +178,17 @@
         "question": "Když nakupujete s přítelem:",
         "answers": [
           {
-            "id": 0,
+            "id": 24,
             "answer": "Nadiktujete mu, co chcete. Už jste se rozhodli.",
             "value": 3
           },
           {
-            "id": 1,
+            "id": 25,
             "answer": "Oba sepíšete seznam požadavků a společně se dohodnete.",
             "value": 2
           },
           {
-            "id": 2,
+            "id": 26,
             "answer": "Poslechnete si, co chce přítel, a přizpůsobíte se.",
             "value": 1
           }
@@ -199,17 +199,17 @@
         "question": "Někdo uráží vašeho přítele/kolegu...:",
         "answers": [
           {
-            "id": 0,
+            "id": 27,
             "answer": "Rozpačitě se vypaříte, určitě by nechtěli, abyste to viděl.",
             "value": 1
           },
           {
-            "id": 1,
+            "id": 28,
             "answer": "Vložíte se do toho a začnete přítele zuřivě bránit.",
             "value": 3
           },
           {
-            "id": 2,
+            "id": 29,
             "answer": "Zeptáte se, zda nepotřebují pomoct problém vyřešit.",
             "value": 2
           }
@@ -220,17 +220,17 @@
         "question": "Co uděláte, když zjistíte, že vás někam nepozvali?",
         "answers": [
           {
-            "id": 0,
+            "id": 30,
             "answer": "Všem vyprávíte, jak jste zklamaní, a dáte jasně najevo, že vy je příště také nikam nepozvete.",
             "value": 3
           },
           {
-            "id": 1,
+            "id": 31,
             "answer": "Přepokládáte, že pro to mají rozumný důvod, a necháte to být.",
             "value": 1
           },
           {
-            "id": 2,
+            "id": 32,
             "answer": "Zavoláte jim a zeptáte se, zda vás jen opomenuli nebo mají už mnoho hostů.",
             "value": 2
           }
@@ -241,17 +241,17 @@
         "question": "Pokud o vás někdo mluví negativně:",
         "answers": [
           {
-            "id": 0,
+            "id": 33,
             "answer": "Vezmete si ho stranou, vysvětlíte mu, jak se kvůli tomu cítíte, a zeptáte se, jak můžete jeho názor změnit.",
             "value": 3
           },
           {
-            "id": 1,
+            "id": 34,
             "answer": "Konfrontujete ho a přemýšlíte, co negativního řeknete o něm.",
             "value": 2
           },
           {
-            "id": 2,
+            "id": 35,
             "answer": "Doufáte, že to přejde.",
             "value": 1
           }

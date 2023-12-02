@@ -1,9 +1,19 @@
 import './style.css';
 
-export const AnswerList = ({ answer }) => {
+export const AnswerList = ({ answer, selected, onSelect }) => {
+  const value = answer.value;
+
   return (
     <>
-      <li className="answers__answer" key={answer.id}>
+      <li
+        onClick={() => {
+          onSelect(answer.id);
+        }}
+        className={`answers__answer${
+          selected ? ' answers__answer--selected' : ''
+        }`}
+        key={answer.id}
+      >
         <p className="answers__text">{answer.answer}</p>
       </li>
     </>
