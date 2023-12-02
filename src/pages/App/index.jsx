@@ -9,10 +9,14 @@ export const App = () => {
   const location = useLocation();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
+
+  useEffect(() => {
     if (location.hash) {
       document.querySelector(location.hash)?.scrollIntoView();
     }
-  }, [location]);
+  }, [location.hash]);
 
   return (
     <div className="site">
