@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useOutletContext } from 'react-router-dom';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
+import celebrate from './celebrate.png';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -13,8 +14,8 @@ import './style.css';
 // import required modules
 import { EffectCards, Navigation } from 'swiper/modules';
 import { AnswerList } from '../../components/AnswerList';
-import { ButtonPrimary } from '../../components/ButtonPrimary';
 import { Link } from 'react-router-dom';
+import { ButtonSecondary } from '../../components/ButtonSecondary';
 
 export const QuestionsPage = () => {
   const [selectedAnswers, setSelectedAnswers] = useState({});
@@ -72,29 +73,34 @@ export const QuestionsPage = () => {
         slidesPerView={'auto'}
         className="mySwiper"
       >
-        <div>
-          {questions.map((question) => (
-            <SwiperSlide key={question.id}>
-              <h3 className="question__title">{question.question}</h3>
-              <ol className="answers">
-                {questions[question.id].answers.map((answer) => (
-                  <AnswerList
-                    key={answer.id}
-                    answer={answer}
-                    selected={answer.id === selectedAnswers[question.id]}
-                    onSelect={() => handleAnswerSelect(question.id, answer.id)}
-                  />
-                ))}
-              </ol>
-            </SwiperSlide>
-          ))}
-          <SwiperSlide>
-            <h3 className="question__title">Gratuluji!</h3>
-            <Link to={`results/${score}`}>
-              <ButtonPrimary>Vyhodnotit</ButtonPrimary>
-            </Link>
+        {questions.map((question) => (
+          <SwiperSlide key={question.id}>
+            <h3 className="question__title">{question.question}</h3>
+            <ol className="answers">
+              {questions[question.id].answers.map((answer) => (
+                <AnswerList
+                  key={answer.id}
+                  answer={answer}
+                  selected={answer.id === selectedAnswers[question.id]}
+                  onSelect={() => handleAnswerSelect(question.id, answer.id)}
+                />
+              ))}
+            </ol>
           </SwiperSlide>
-        </div>
+        ))}
+        <SwiperSlide>
+          <div className="lastQuestion__container">
+            <h3 className="question__title">
+              Gratuluji úspěšně jsi dokončil test!
+            </h3>
+            <div className="lastQuestion__image">
+              <img src={celebrate} alt="celebration image" />
+            </div>
+            <Link to={`results/${score}`}>
+              <ButtonSecondary>Vyhodnotit</ButtonSecondary>
+            </Link>
+          </div>
+        </SwiperSlide>
       </Swiper>
     </div>
   );
