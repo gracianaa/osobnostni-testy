@@ -13,6 +13,8 @@ import './style.css';
 // import required modules
 import { EffectCards, Navigation } from 'swiper/modules';
 import { AnswerList } from '../../components/AnswerList';
+import { ButtonPrimary } from '../../components/ButtonPrimary';
+import { Link } from 'react-router-dom';
 
 export const QuestionsPage = () => {
   const [selectedAnswers, setSelectedAnswers] = useState({});
@@ -20,26 +22,48 @@ export const QuestionsPage = () => {
   const test = useOutletContext();
   const questions = test.questions;
 
-  const handleAnswerSelect = (questionId, answerId, value) => {
+  const indexById = (array) => {
+    const index = {};
+
+    array.forEach((object) => {
+      index[object.id] = object;
+    });
+
+    return index;
+  };
+
+  const handleAnswerSelect = (questionId, answerId) => {
     setSelectedAnswers({
       ...selectedAnswers,
-      [questionId]: { answerId, value },
+      [questionId]: answerId,
     });
   };
 
   const calculateTotalValue = () => {
-    // Získání všech hodnot (values) ze všech odpovědí
-    const allValues = Object.values(selectedAnswers);
+    let score = 0;
 
-    // Sečítání hodnot pomocí reduce
-    const totalValue = allValues.reduce((sum, answer) => sum + answer.value, 0);
+    const allSelectedQuestionIds = Object.keys(selectedAnswers);
+    const indexedQuestions = indexById(questions);
 
-    return totalValue;
+    allSelectedQuestionIds.forEach((questionId) => {
+      const selectedAnswerId = selectedAnswers[questionId];
+      const answeredQuestion = indexedQuestions[questionId];
+
+      const indexedAnswers = indexById(answeredQuestion.answers);
+
+      const selectedAnswer = indexedAnswers[selectedAnswerId];
+      const selectedAnswerValue = selectedAnswer.value;
+
+      score += selectedAnswerValue;
+    });
+
+    return score;
   };
 
-  const vysledek = calculateTotalValue();
+  const score = calculateTotalValue();
 
-  console.log(vysledek);
+  console.log(score);
+  // setScore(vysledek);
 
   return (
     <div className="swiper">
@@ -61,17 +85,19 @@ export const QuestionsPage = () => {
                   <AnswerList
                     key={answer.id}
                     answer={answer}
-                    selected={
-                      answer.id === selectedAnswers[question.id]?.answerId
-                    }
-                    onSelect={() =>
-                      handleAnswerSelect(question.id, answer.id, answer.value)
-                    }
+                    selected={answer.id === selectedAnswers[question.id]}
+                    onSelect={() => handleAnswerSelect(question.id, answer.id)}
                   />
                 ))}
               </ol>
             </SwiperSlide>
           ))}
+          <SwiperSlide>
+            <h3 className="question__title">Gratuluji!</h3>
+            <Link to={`results/${score}`}>
+              <ButtonPrimary>Vyhodnotit</ButtonPrimary>
+            </Link>
+          </SwiperSlide>
         </div>
       </Swiper>
     </div>
