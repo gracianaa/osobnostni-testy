@@ -19,7 +19,7 @@
   box-shadow: var(--shadow);
 }
 
-.answers__answer--selected::before {
+.answers__answer.answers__answer--selected::before {
   background-color: var(--color-secondary);
   color: white;
   box-shadow: none;

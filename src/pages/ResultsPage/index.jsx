@@ -8,8 +8,6 @@ export const ResultsPage = () => {
   const test = useOutletContext();
   const results = test.results;
 
-  console.log(results);
-
   let bestResult = null;
 
   results.forEach((result) => {
@@ -17,10 +15,8 @@ export const ResultsPage = () => {
       if (bestResult === null || result.minScore > bestResult.minScore) {
         bestResult = result;
       }
-      console.log('ano', result);
     }
   });
-  console.log('best', bestResult);
 
   return (
     <div className="resultCard">

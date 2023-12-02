@@ -62,9 +62,6 @@ export const QuestionsPage = () => {
 
   const score = calculateTotalValue();
 
-  console.log(score);
-  // setScore(vysledek);
-
   return (
     <div className="swiper">
       <Swiper
