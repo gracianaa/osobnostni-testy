@@ -6,13 +6,26 @@ import { useOutletContext, useParams } from 'react-router-dom';
 export const ResultsPage = () => {
   const { score } = useParams();
   const test = useOutletContext();
+  const results = test.results;
 
-  console.log(score, test);
+  console.log(results);
+
+  let bestResult = null;
+
+  results.forEach((result) => {
+    if (score >= result.minScore) {
+      if (bestResult === null || result.minScore > bestResult.minScore) {
+        bestResult = result;
+      }
+      console.log('ano', result);
+    }
+  });
+  console.log('best', bestResult);
 
   return (
     <div className="resultCard">
-      <h4 className="resultCard__title">{test.results[0].result}</h4>
-      <p className="resultCard__description">{test.results[0].description}</p>
+      <h4 className="resultCard__title">{bestResult.result}</h4>
+      <p className="resultCard__description">{bestResult.description}</p>
       <ButtonSecondary>
         <div className="buttonShare">
           <div className="buttonShare__image">

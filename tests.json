@@ -266,16 +266,16 @@
         "description": "Snažíte se konfliktům vyhýbat. Problémům se vyhýbáte a raději neuděláte nic, než abyste problém řešili. Často cítíte frustraci, že vás nikdo neposlouchá, ale představa, že byste se ozvali, vás děsí. Vaší přirozenou reakcí na konflikt je utéct nebo ukrýt se, popřípadě se podvolíte, abyste unikli diskusi. Postupem času si však připadáte čím dál nešťastnější, a tedy i vystresovanější, až nakonec vybuchnete. Snažte se svůj názor vyjadřovat alespoň v méně vypjatých situacích a konfliktům se nevyhýbejte."
       },
       {
-        "id": 1,
-        "minScore": 13,
-        "result": "FUNGUJETE JAKO MÍROTVŮRCE",
-        "description": "Chcete, aby měl každý svůj hlas, a toužíte najít řešení přijatelné pro všechny. Věříte, že každý spor se dá vyřešit diskusí. Vždy se snažíte najít řešení a k problémům přistupujete střízlivě a pozitivně. Své názory vyjadřujete sebejistě, ale zároveň nasloucháte ostatním. Když dojde ke konfliktu, snažíte se vidět situaci z pohledu všech zúčastněných. Použijete výmluvnost, aby byl každý spokojený a řešení bylo přijatelné pro všechny. Víte ale, že občas se ujme vedení konfliktní osoba, a v takovém případě je pro vás těžké přijmout její řešení, abyste se vyhnuli sporu."
-      },
-      {
         "id": 2,
         "minScore": 25,
         "result": "JSTE BULDOZER",
         "description": "Víte, co chcete, a konfliktu se nebojíte. V konfliktech se vyžíváte a víte, jak prosadit svůj názor. Někteří vás vnímají jako agresora, který jim může ublížit slovně či fyzicky. Někdy vyvoláte konflikt jen tak pro zábavu a divíte se, že si to ostatní berou tak osobně. Věříte, že nejlepší je všechno si vyříkat a hra na d'áblova advokáta může přinést nové nápady nebo vyřešit problémy. Snažíte se tedy vyvolat diskusi, ale zároveň nasloucháte ostatním, abyste na problém nahlíželi z více úhlů."
+      },
+      {
+        "id": 1,
+        "minScore": 13,
+        "result": "FUNGUJETE JAKO MÍROTVŮRCE",
+        "description": "Chcete, aby měl každý svůj hlas, a toužíte najít řešení přijatelné pro všechny. Věříte, že každý spor se dá vyřešit diskusí. Vždy se snažíte najít řešení a k problémům přistupujete střízlivě a pozitivně. Své názory vyjadřujete sebejistě, ale zároveň nasloucháte ostatním. Když dojde ke konfliktu, snažíte se vidět situaci z pohledu všech zúčastněných. Použijete výmluvnost, aby byl každý spokojený a řešení bylo přijatelné pro všechny. Víte ale, že občas se ujme vedení konfliktní osoba, a v takovém případě je pro vás těžké přijmout její řešení, abyste se vyhnuli sporu."
       }
     ]
   },
