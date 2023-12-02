@@ -20,11 +20,26 @@ export const QuestionsPage = () => {
   const test = useOutletContext();
   const questions = test.questions;
 
-  const handleAnswerSelect = (questionId, answerId) => {
-    setSelectedAnswers({ ...selectedAnswers, [questionId]: answerId });
+  const handleAnswerSelect = (questionId, answerId, value) => {
+    setSelectedAnswers({
+      ...selectedAnswers,
+      [questionId]: { answerId, value },
+    });
   };
 
-  console.log(selectedAnswers);
+  const calculateTotalValue = () => {
+    // Získání všech hodnot (values) ze všech odpovědí
+    const allValues = Object.values(selectedAnswers);
+
+    // Sečítání hodnot pomocí reduce
+    const totalValue = allValues.reduce((sum, answer) => sum + answer.value, 0);
+
+    return totalValue;
+  };
+
+  const vysledek = calculateTotalValue();
+
+  console.log(vysledek);
 
   return (
     <div className="swiper">
@@ -46,8 +61,12 @@ export const QuestionsPage = () => {
                   <AnswerList
                     key={answer.id}
                     answer={answer}
-                    selected={answer.id === selectedAnswers[question.id]}
-                    onSelect={() => handleAnswerSelect(question.id, answer.id)}
+                    selected={
+                      answer.id === selectedAnswers[question.id]?.answerId
+                    }
+                    onSelect={() =>
+                      handleAnswerSelect(question.id, answer.id, answer.value)
+                    }
                   />
                 ))}
               </ol>

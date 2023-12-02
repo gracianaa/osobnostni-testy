@@ -7,14 +7,16 @@ export const AnswerList = ({ answer, selected, onSelect }) => {
     <>
       <li
         onClick={() => {
-          onSelect(answer.id);
+          onSelect();
         }}
         className={`answers__answer${
           selected ? ' answers__answer--selected' : ''
         }`}
         key={answer.id}
       >
-        <p className="answers__text">{answer.answer}</p>
+        <p className="answers__text">
+          {answer.answer} {value}
+        </p>
       </li>
     </>
   );
