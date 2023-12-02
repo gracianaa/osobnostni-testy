@@ -15,21 +15,16 @@ import { EffectCards, Navigation } from 'swiper/modules';
 import { AnswerList } from '../../components/AnswerList';
 
 export const QuestionsPage = () => {
-  const [allAnswersId, setAllAnswersId] = useState([]);
-  const [selectedAnswerId, setSelectedAnswerId] = useState(null);
+  const [selectedAnswers, setSelectedAnswers] = useState({});
 
   const test = useOutletContext();
   const questions = test.questions;
 
-  const handleAllAnswersId = () => {
-    setAllAnswersId([...allAnswersId, selectedAnswerId]);
+  const handleAnswerSelect = (questionId, answerId) => {
+    setSelectedAnswers({ ...selectedAnswers, [questionId]: answerId });
   };
 
-  useEffect(() => {
-    handleAllAnswersId();
-  }, [selectedAnswerId]);
-
-  console.log(allAnswersId);
+  console.log(selectedAnswers);
 
   return (
     <div className="swiper">
@@ -51,8 +46,8 @@ export const QuestionsPage = () => {
                   <AnswerList
                     key={answer.id}
                     answer={answer}
-                    selected={answer.id === selectedAnswerId}
-                    onSelect={setSelectedAnswerId}
+                    selected={answer.id === selectedAnswers[question.id]}
+                    onSelect={() => handleAnswerSelect(question.id, answer.id)}
                   />
                 ))}
               </ol>
