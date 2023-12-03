@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ButtonPrimary } from '../ButtonPrimary';
+import { Button } from '../Button';
 import './style.css';
 import trio from './trio.png';
 
@@ -10,7 +10,7 @@ export const PageIntro = () => {
         <h1 className="intro__heading">Každý z nás je unikát.</h1>
         <h2 className="intro__subHeading">Zjisti v čem vynikáš ty...</h2>
         <a href="#chooseTest">
-          <ButtonPrimary>Vybrat test</ButtonPrimary>
+          <Button type={'primary'}>Vybrat test</Button>
         </a>
       </div>
       <div className="intro__image">

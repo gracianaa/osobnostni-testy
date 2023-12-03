@@ -47,19 +47,6 @@ main {
   text-align: center;
 }
 
-.button {
-  border: none;
-  padding: 10px 20px;
-  font-family: var(--font-secondary);
-  font-size: 15px;
-  border-radius: 15px;
-  box-shadow: var(--shadow)
-}
-
-.button__container {
-  text-align: center;
-}
-
 section {
   margin: 0 auto 80px auto;
   max-width: 1000px;
