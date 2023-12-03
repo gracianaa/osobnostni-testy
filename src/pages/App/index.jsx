@@ -4,22 +4,31 @@ import { Menu } from '../../components/Menu';
 import { Footer } from '../../components/Footer';
 import { useState, useEffect } from 'react';
 
+const scrollToHash = (hash) => {
+  if (hash) {
+    document.querySelector(hash)?.scrollIntoView();
+  }
+};
+
 export const App = () => {
   const [menuOpened, setMenuOpened] = useState(false);
   const location = useLocation();
+
+  const handleClick = (e) => {
+    const hash = e.target.closest('a')?.hash;
+    scrollToHash(hash);
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [location.pathname]);
 
   useEffect(() => {
-    if (location.hash) {
-      document.querySelector(location.hash)?.scrollIntoView();
-    }
+    scrollToHash(location.hash);
   }, [location.hash]);
 
   return (
-    <div className="site">
+    <div id="home" className="site" onClick={handleClick}>
       <Menu onToggleMenu={setMenuOpened} menuOpened={menuOpened} />
       <Outlet />
       <Footer />
