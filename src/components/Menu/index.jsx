@@ -11,7 +11,7 @@ export const Menu = ({ onToggleMenu, menuOpened }) => {
   return (
     <nav className={menuOpened ? 'menu menu--opened' : 'menu'}>
       <div className="menu__toolBar">
-        <Link className="menu__logo" to="#home">
+        <Link className="menu__logo" to="/#home">
           Osobnostní testy
         </Link>
 
