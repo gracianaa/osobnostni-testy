@@ -46,8 +46,10 @@ export const QuestionsPage = () => {
                 <AnswerList
                   key={answer.id}
                   answer={answer}
-                  selected={answer.id === selectedAnswers[question.id]}
                   onSelect={() => handleAnswerSelect(question.id, answer.id)}
+                  questions={questions}
+                  selectedAnswers={selectedAnswers}
+                  questionId={question.id}
                 />
               ))}
             </ol>

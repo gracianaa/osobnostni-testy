@@ -3,6 +3,7 @@ import { Button } from '../Button';
 import celebrate from './celebrate.png';
 import rejection from './missingQuestion.png';
 import { useSwiper } from 'swiper/react';
+import { findFirstUnansweredIndex } from '../../helpers/findFirstUnansweredIndex';
 
 export const EvaluationSlide = ({ test, selectedAnswers }) => {
   const swiper = useSwiper();
@@ -55,7 +56,9 @@ export const EvaluationSlide = ({ test, selectedAnswers }) => {
         </div>
         <Button
           onClick={() => {
-            swiper.slideTo(2);
+            swiper.slideTo(
+              findFirstUnansweredIndex(questions, selectedAnswers),
+            );
           }}
           type={'secondary'}
         >
