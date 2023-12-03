@@ -22,7 +22,11 @@ export const ResultsPage = () => {
     <div className="resultCard">
       <h4 className="resultCard__title">{bestResult.result}</h4>
       <p className="resultCard__description">{bestResult.description}</p>
-      <img src={bestResult.image} alt={bestResult.image} />
+      <img
+        className="resultCard__img"
+        src={bestResult.image}
+        alt={bestResult.image}
+      />
       <Button type={'secondary'}>
         <div className="buttonShare">
           <div className="buttonShare__image">

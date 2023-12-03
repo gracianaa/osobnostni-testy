@@ -1,4 +1,5 @@
 import './style.css';
+import chartCharacter from './chart.png';
 
 export const HowItWorks = () => {
   return (
@@ -23,6 +24,9 @@ export const HowItWorks = () => {
             </p>
           </li>
         </ol>
+      </div>
+      <div className="howItWorks__img">
+        <img src={chartCharacter} alt="Character with a chart" />
       </div>
     </section>
   );

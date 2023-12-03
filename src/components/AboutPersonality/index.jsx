@@ -1,5 +1,6 @@
 import { Button } from '../Button';
 import './style.css';
+import ideaMan from './idea.png';
 
 export const AboutPersonality = () => {
   return (
@@ -15,6 +16,10 @@ export const AboutPersonality = () => {
       <Button to="/personality" type={'primary'}>
         Zjistit více
       </Button>
+
+      <div className="aboutPersonality__img">
+        <img src={ideaMan} alt="Man with an idea" />
+      </div>
     </section>
   );
 };

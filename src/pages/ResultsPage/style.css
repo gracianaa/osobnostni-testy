@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+.resultCard__img {
+  display: none;
+}
+
 
 .buttonShare {
   display: flex;

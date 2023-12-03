@@ -33,3 +33,7 @@
 .howItWorks__text {
   overflow: hidden;
 }
+
+.howItWorks__img {
+  display: none;
+}

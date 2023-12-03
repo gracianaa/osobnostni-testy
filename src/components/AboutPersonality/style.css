@@ -7,3 +7,7 @@
 .aboutPersonality__info {
   margin-bottom: 20px;
 }
+
+.aboutPersonality__img {
+  display: none;
+}
