@@ -40,20 +40,8 @@ export const EvaluationSlide = ({ test, selectedAnswers }) => {
 
   const score = calculateTotalValue();
   const answeredQuestionCount = Object.keys(selectedAnswers).length;
-  console.log(answeredQuestionCount);
-  console.log(questions.length);
 
-  let content = (
-    <>
-      <h3 className="question__title">Gratuluji úspěšně jsi dokončil test!</h3>
-      <div className="lastQuestion__image">
-        <img src={celebrate} alt="celebration image" />
-      </div>
-      <Button to={`results/${score}`} type={'secondary'}>
-        Vyhodnotit
-      </Button>
-    </>
-  );
+  let content = null;
 
   if (questions.length !== answeredQuestionCount) {
     content = (
@@ -71,6 +59,20 @@ export const EvaluationSlide = ({ test, selectedAnswers }) => {
           type={'secondary'}
         >
           Zpět k otázkám
+        </Button>
+      </>
+    );
+  } else {
+    content = (
+      <>
+        <h3 className="question__title">
+          Gratuluji úspěšně jsi dokončil test!
+        </h3>
+        <div className="lastQuestion__image">
+          <img src={celebrate} alt="celebration image" />
+        </div>
+        <Button to={`results/${score}`} type={'secondary'}>
+          Vyhodnotit
         </Button>
       </>
     );

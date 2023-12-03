@@ -5,8 +5,8 @@
   font-size: 15px;
   border-radius: 15px;
   box-shadow: var(--shadow);
-  width: fit-content;
   cursor: pointer;
+  text-decoration: none;
 }
 
 .button--primary {
@@ -20,4 +20,5 @@
 
 .button--secondary {
   color: var(--color-primary);
+  background-color: white;
 }
