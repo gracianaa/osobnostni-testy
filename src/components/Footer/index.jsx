@@ -16,7 +16,7 @@ export const Footer = () => {
           Práce s testy
         </Link>
         <p className="footer__source">
-          Zdroj: Kniha sobnostních testů od Haulwen Nicholas{' '}
+          Zdroj: Kniha osobnostních testů od Haulwen Nicholas{' '}
         </p>
       </div>
     </footer>
