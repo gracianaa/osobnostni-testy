@@ -17,7 +17,7 @@ export const AnswerList = ({
   const selected = answer.id === selectedAnswers[questionId];
 
   return (
-    <button
+    <li
       onClick={() => {
         onSelect();
         if (firstUnansweredIndex === null) {
@@ -31,6 +31,6 @@ export const AnswerList = ({
       }`}
     >
       <p className="answers__text">{answer.answer}</p>
-    </button>
+    </li>
   );
 };

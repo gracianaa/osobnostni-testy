@@ -33,6 +33,8 @@ export const QuestionsPage = () => {
       <Swiper
         effect={'cards'}
         grabCursor={true}
+        preventClicks={false}
+        preventClicksPropagation={false}
         modules={[EffectCards]}
         centeredSlides={true}
         slidesPerView={'auto'}
