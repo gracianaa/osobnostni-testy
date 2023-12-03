@@ -42,6 +42,7 @@ export const QuestionsPage = () => {
 
   const calculateTotalValue = () => {
     let score = 0;
+    const selected = [];
 
     const allSelectedQuestionIds = Object.keys(selectedAnswers);
     const indexedQuestions = indexById(questions);
@@ -56,6 +57,9 @@ export const QuestionsPage = () => {
       const selectedAnswerValue = selectedAnswer.value;
 
       score += selectedAnswerValue;
+
+      selected.push(selectedAnswer);
+      console.log(selected);
     });
 
     return score;
