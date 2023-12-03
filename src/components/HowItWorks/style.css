@@ -1,27 +1,28 @@
+.howItWorks__container {
+  counter-reset: list-item;
+}
+
 .howItWorks__item {
-  position: relative;
-  padding: 15px;
-  margin: 15px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .howItWorks__item::before {
   content: counter(list-item);
-  position: relative;
-  left: -10px;
-  top: -50%;
-  transform: translateY(0);
-  border: 3px solid var(--color-primary);
+  counter-increment: list-item;
+  color: var(--color-secondary);
+  border: 2px solid var(--color-primary);
   border-radius: 50%;
   width: 50px;
   height: 50px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  flex: 0 0 auto;
   font-family: var(--font-primary);
   font-size: 25px;
-  vertical-align: middle;
-  /* Align with the baseline */
-  float: left;
 }
 
 .howItWorks__list {
