@@ -6,6 +6,13 @@
   border-radius: 15px;
   box-shadow: var(--shadow);
   cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.2s;
+  display: inline-block;
+}
+
+.button:hover {
+  transform: scale(1.1);
 }
 
 .button--primary {
@@ -13,9 +20,6 @@
   color: white;
 }
 
-.button:hover {
-  transform: scale(1.1);
-}
 
 .button--secondary {
   color: var(--color-primary);
