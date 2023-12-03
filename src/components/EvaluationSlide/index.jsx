@@ -1,6 +1,7 @@
 import './style.css';
 import { Button } from '../Button';
 import celebrate from './celebrate.png';
+import rejection from './missingQuestion.png';
 import { useSwiper } from 'swiper/react';
 
 export const EvaluationSlide = ({ test, selectedAnswers }) => {
@@ -50,7 +51,7 @@ export const EvaluationSlide = ({ test, selectedAnswers }) => {
           Ups, zdá se že jsi vynechal některou otázku 🙁
         </h3>
         <div className="lastQuestion__image">
-          <img src={celebrate} alt="celebration image" />
+          <img src={rejection} alt="rejection image" />
         </div>
         <Button
           onClick={() => {
