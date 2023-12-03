@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Button } from '../Button';
 import './style.css';
 
@@ -12,9 +11,10 @@ export const AboutPersonality = () => {
         duchovní aspekty, přičemž existuje tvrzení, že jedinec může mít i skryté
         vlastnosti, kterým nerozumíme.
       </p>
-      <Link to="/personality">
-        <Button type={'primary'}>Zjistit více</Button>
-      </Link>
+
+      <Button to="/personality" type={'primary'}>
+        Zjistit více
+      </Button>
     </section>
   );
 };

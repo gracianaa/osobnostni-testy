@@ -1,9 +1,10 @@
 import './style.css';
-import { Link } from 'react-router-dom';
 import { Button } from '../Button';
 import celebrate from './celebrate.png';
+import { useSwiper } from 'swiper/react';
 
 export const EvaluationSlide = ({ test, selectedAnswers }) => {
+  const swiper = useSwiper();
   const questions = test.questions;
 
   const indexById = (array) => {
@@ -42,15 +43,38 @@ export const EvaluationSlide = ({ test, selectedAnswers }) => {
   console.log(answeredQuestionCount);
   console.log(questions.length);
 
-  return (
-    <div className="lastQuestion__container">
+  let content = (
+    <>
       <h3 className="question__title">Gratuluji úspěšně jsi dokončil test!</h3>
       <div className="lastQuestion__image">
         <img src={celebrate} alt="celebration image" />
       </div>
-      <Link to={`results/${score}`}>
-        <Button type={'secondary'}>Vyhodnotit</Button>
-      </Link>
-    </div>
+      <Button to={`results/${score}`} type={'secondary'}>
+        Vyhodnotit
+      </Button>
+    </>
   );
+
+  if (questions.length !== answeredQuestionCount) {
+    content = (
+      <>
+        <h3 className="question__title">
+          Ups, zdá se že jsi vynechal některou otázku 🙁
+        </h3>
+        <div className="lastQuestion__image">
+          <img src={celebrate} alt="celebration image" />
+        </div>
+        <Button
+          onClick={() => {
+            swiper.slideTo(2);
+          }}
+          type={'secondary'}
+        >
+          Zpět k otázkám
+        </Button>
+      </>
+    );
+  }
+
+  return <div className="lastQuestion__container">{content}</div>;
 };

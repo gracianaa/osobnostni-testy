@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { Button } from '../Button';
 import './style.css';
 
@@ -14,9 +13,9 @@ export const CardTest = ({ test }) => {
       <div className="cardTest__image">
         <img src={test.img} alt={test.title} />
       </div>
-      <Link to={`/test/${test.id}`}>
-        <Button type={'secondary'}>Spustit test</Button>
-      </Link>
+      <Button to={`/test/${test.id}`} type={'secondary'}>
+        Spustit test
+      </Button>
     </div>
   );
 };
