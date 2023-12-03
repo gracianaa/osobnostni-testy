@@ -1,4 +1,4 @@
-import { ButtonSecondary } from '../../components/ButtonSecondary';
+import { Button } from '../../components/Button';
 import shareButton from './share.png';
 import './style.css';
 import { useOutletContext, useParams } from 'react-router-dom';
@@ -22,14 +22,14 @@ export const ResultsPage = () => {
     <div className="resultCard">
       <h4 className="resultCard__title">{bestResult.result}</h4>
       <p className="resultCard__description">{bestResult.description}</p>
-      <ButtonSecondary>
+      <Button type={'secondary'}>
         <div className="buttonShare">
           <div className="buttonShare__image">
             <img src={shareButton} alt="share" />
           </div>
           Sdílet s přáteli
         </div>
-      </ButtonSecondary>
+      </Button>
     </div>
   );
 };

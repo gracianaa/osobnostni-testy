@@ -1,0 +1,23 @@
+.button {
+  border: none;
+  padding: 10px 20px;
+  font-family: var(--font-secondary);
+  font-size: 15px;
+  border-radius: 15px;
+  box-shadow: var(--shadow);
+  width: fit-content;
+  cursor: pointer;
+}
+
+.button--primary {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.button:hover {
+  transform: scale(1.2);
+}
+
+.button--secondary {
+  color: var(--color-primary);
+}

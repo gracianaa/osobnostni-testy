@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ButtonPrimary } from '../ButtonPrimary';
+import { Button } from '../Button';
 import './style.css';
 
 export const AboutPersonality = () => {
@@ -13,7 +13,7 @@ export const AboutPersonality = () => {
         vlastnosti, kterým nerozumíme.
       </p>
       <Link to="/personality">
-        <ButtonPrimary>Zjistit více</ButtonPrimary>
+        <Button type={'primary'}>Zjistit více</Button>
       </Link>
     </section>
   );

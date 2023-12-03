@@ -15,7 +15,7 @@ import './style.css';
 import { EffectCards, Navigation } from 'swiper/modules';
 import { AnswerList } from '../../components/AnswerList';
 import { Link } from 'react-router-dom';
-import { ButtonSecondary } from '../../components/ButtonSecondary';
+import { Button } from '../../components/Button';
 
 export const QuestionsPage = () => {
   const [selectedAnswers, setSelectedAnswers] = useState({});
@@ -97,7 +97,7 @@ export const QuestionsPage = () => {
               <img src={celebrate} alt="celebration image" />
             </div>
             <Link to={`results/${score}`}>
-              <ButtonSecondary>Vyhodnotit</ButtonSecondary>
+              <Button type={'secondary'}>Vyhodnotit</Button>
             </Link>
           </div>
         </SwiperSlide>
