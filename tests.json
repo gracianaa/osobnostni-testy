@@ -545,18 +545,21 @@
       {
         "id": 0,
         "minScore": 12,
+        "image": "/images/mon1.png",
         "result": "JSTE SKROMNÍ",
         "description": "Utratíte jen to, co musíte. Váš vztah k penězům je o šetření, ale často na úkor zábavy. Neradi riskujete, a pokud na něco nemáte peníze, nepořídíte si to. Vystačíte si s málem a chcete si být jistí, že máte našetřeno dost na důchod. Je skvělé, že si dáváte takový pozor, nesmíte však zapomenout trochu žít. Uvědomte si, že je v pořádku chtít víc. Možná byste si mohli založit speciální účet, kam si budete ukládat peníze určené na zábavu. Pokuste se začít žít přítomností."
       },
       {
         "id": 1,
         "minScore": 20,
+        "image": "/images/mon2.png",
         "result": "UMÍTE ŠETŘIT I UTRÁCET",
         "description": "Víte, co obnáší život. Život si máme užít, ale vy také víte, že s penězi je třeba zacházet opatrně, abyste se uměli vypořádat s těžkými životními situacemi. I když si spoříte a snažíte se plánovat, také si chcete užívat, protože nikdy nevíte, co budoucnost přinese. Jedná se o zdravý vztah a znamená to, že se dokážete bavit a zároveň se nemusíte strachovat o svou budoucnost. S vaším přístupem se nemusíte bát žít okamžikem."
       },
       {
         "id": 2,
         "minScore": 28,
+        "image": "/images/mon3.png",
         "result": "ROZHAZUJETE",
         "description": "Žijete okamžikem. Milujete život a utrácíte, abyste se odměnili za svou tvrdou práci. Jakmile vám přijdou peníze, už je máte dávno utracené nebo přemýšlíte, jak byste je mohli utratit. Nemáte žádné úspory a neustále si děláte starosti, jak zaplatíte účty a dluhy. Zamyslete se nad svým přístupem k penězům a nad tím, odkud se bere vaše touha utrácet je bez rozmyšlení. Je dobré se bavit, ale pokud člověk utrácí příliš, často to souvisí s potlačenými emocemi, které pramení z touhy po uznání nebo slouží jako mechanismus, jak se vyrovnat s životním údělem."
       }
@@ -885,18 +888,21 @@
       {
         "id": 0,
         "minScore": 12,
+        "image": "/images/hon1.png",
         "result": "PODPRŮMĚR",
         "description": "Nejste k sobě upřímní. Je tak snadné dělat to, co bychom podle nás dělat měli, než k sobě být upřímní. Lžete ostatním o tom, co jíte, jak cvičíte, co pijete. Ale Ižete jenom sami sobě. Je těžké být k sobě upřímný, ale kdo jiný k nám má být upřímný než právě my sami? Začněte malými krůčky. Jste upřímní? Co lze udělat pro to, abyste byli otevřenější? Proč máte pocit, že musíte sobě a ostatním lhát?"
       },
       {
         "id": 1,
         "minScore": 25,
+        "image": "/images/hon2.png",
         "result": "PRŮMĚR",
         "description": "Jste k sobě stále upřímnější. Většina lidí zažívá dny, kdy k sobě nedokážou být upřímní. Jak často jste přemýšleli o tom, že váš život není takový, jak byste chtěli? Takové myšlenky má každý. Nalháváme si, proč bychom měli něco dělat, místo abychom dělali něco, co opravdu chceme a co je pro nás to správné. Buďte k sobě každý den upřímnější a váš život se od základu změní."
       },
       {
         "id": 2,
         "minScore": 37,
+        "image": "/images/hon3.png",
         "result": "NADPRŮMĚR",
         "description": "Jste k sobě upřímní a otevření. Naučili jste se, že pokud nejste upřímní k tomu, jak se cítíte, jak vypadáte a co děláte, nemůžete být upřímní ani k okolnímu světu. Zjistili jste, že upřímnost vede k osvobození od břemene toho, co byste měli dělat. Teprve pak dokážete rozpoznat své silné stránky, ovládnout svůj strach, mít vše pod kontrolou, a díky tomu žít autentický život."
       }

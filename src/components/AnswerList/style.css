@@ -1,5 +1,5 @@
 .answers {
-  counter-reset: list-item;
+  counter-set: list-item;
   list-style-type: none;
   text-align: left;
   padding: 20px 0;
@@ -58,8 +58,4 @@
   background-color: var(--color-secondary);
   color: white;
   box-shadow: none;
-}
-
-.answers__text {
-  overflow: hidden;
 }
