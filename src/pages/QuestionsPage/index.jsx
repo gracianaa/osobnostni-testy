@@ -7,11 +7,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/effect-cards';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 import './style.css';
 
 // import required modules
-import { EffectCards, Navigation } from 'swiper/modules';
+import { EffectCards, Pagination } from 'swiper/modules';
 import { AnswerList } from '../../components/AnswerList';
 import { EvaluationSlide } from '../../components/EvaluationSlide';
 
@@ -27,15 +28,25 @@ export const QuestionsPage = () => {
       [questionId]: answerId,
     });
   };
+  const pagination = {
+    clickable: true,
+    renderBullet: function (index, className) {
+      if (index <= questions.length - 1) {
+        return '<span class="' + className + '">' + (index + 1) + '</span>';
+      }
+      return '';
+    },
+  };
 
   return (
     <div className="swiper">
       <Swiper
+        pagination={pagination}
         effect={'cards'}
         grabCursor={true}
         preventClicks={false}
         preventClicksPropagation={false}
-        modules={[EffectCards]}
+        modules={[EffectCards, Pagination]}
         centeredSlides={true}
         slidesPerView={'auto'}
         className="mySwiper"

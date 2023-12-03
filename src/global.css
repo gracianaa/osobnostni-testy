@@ -18,6 +18,7 @@
 html {
   font-family: var(--font-secondary);
   color: var(--color-secondary);
+  scroll-padding-top: 70px;
 }
 
 body {
@@ -48,6 +49,6 @@ main {
 }
 
 section {
-  margin: 0 auto 80px auto;
+  margin: 80px auto 20px auto;
   max-width: 1000px;
 }
