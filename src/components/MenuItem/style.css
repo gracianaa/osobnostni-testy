@@ -6,10 +6,12 @@
   font-family: var(--font-primary);
   color: var(--color-secondary);
   text-decoration: none;
-  transition: transform 0.15s;
+  transition: transform 0.15s, color 0.15s;
+
 }
 
-.menu-item:hover {
-  transform: scale(1.1);
+.menu-item:hover,
+.menu-item:active {
+  transform: scale(1.12);
   color: var(--color-primary);
 }
