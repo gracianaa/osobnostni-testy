@@ -1,3 +1,4 @@
+import { NavLink } from 'react-router-dom';
 import './style.css';
 
 export const MenuItem = ({ text, onSelect, id }) => {
@@ -6,8 +7,8 @@ export const MenuItem = ({ text, onSelect, id }) => {
   };
 
   return (
-    <a onClick={handleClick} href={id} className="menu-item">
+    <NavLink to={id} className="menu-item" onClick={handleClick}>
       {text}
-    </a>
+    </NavLink>
   );
 };

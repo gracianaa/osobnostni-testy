@@ -1,13 +1,15 @@
 .menu-item {
+  text-transform: uppercase;
+  font-size: 15px;
   display: block;
   text-align: center;
   font-family: var(--font-primary);
-  color: var(--color-primary);
+  color: var(--color-secondary);
   text-decoration: none;
-  margin: 10px;
   transition: transform 0.15s;
 }
 
 .menu-item:hover {
   transform: scale(1.1);
+  color: var(--color-primary);
 }
