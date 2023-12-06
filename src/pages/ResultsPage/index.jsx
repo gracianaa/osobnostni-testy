@@ -7,6 +7,9 @@ import jsPDF from 'jspdf';
 import { useRef } from 'react';
 
 export const ResultsPage = () => {
+  const { score } = useParams();
+  const test = useOutletContext();
+  const results = test.results;
   const refPDF = useRef();
 
   const downloadPDF = () => {
@@ -14,14 +17,24 @@ export const ResultsPage = () => {
     html2canvas(input).then((canvas) => {
       const imgData = canvas.toDataURL('image/png');
       const pdf = new jsPDF('p', 'mm', 'a4', true);
-      pdf.addImage(imgData, 'JPEG', 10, 5, 200, 80);
+      const pdfWidth = pdf.internal.pageSize.getWidth();
+      const pdfHeight = pdf.internal.pageSize.getHeight();
+      const imgWidth = canvas.width;
+      const imgHeight = canvas.height;
+      const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
+      const imgX = (pdfWidth - imgWidth * ratio) / 2;
+      const imgY = 10;
+      pdf.addImage(
+        imgData,
+        'PNG',
+        imgX,
+        imgY,
+        imgWidth * ratio,
+        imgHeight * ratio,
+      );
       pdf.save('personality.pdf');
     });
   };
-
-  const { score } = useParams();
-  const test = useOutletContext();
-  const results = test.results;
 
   let bestResult = null;
 
