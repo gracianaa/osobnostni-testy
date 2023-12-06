@@ -6,13 +6,13 @@
 }
 
 .intro__heading {
-  font-size: 36px;
+  font-size: 50px;
   margin-bottom: 0;
 }
 
 .intro__subHeading {
   font-family: var(--font-primary);
-  font-size: 20px;
+  font-size: 30px;
   margin: 5px 0 30px 0;
 }
 
