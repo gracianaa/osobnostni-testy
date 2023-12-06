@@ -21,23 +21,6 @@ export const ResultsPage = () => {
   return (
     <div className="content">
       <div className="resultCard">
-        <h4 className="resultCard__title">{bestResult.result}</h4>
-        <p className="resultCard__description">{bestResult.description}</p>
-        <img
-          className="resultCard__img"
-          src={bestResult.image}
-          alt={bestResult.image}
-        />
-        <Button type={'secondary'}>
-          <div className="buttonShare">
-            <div className="buttonShare__image">
-              <img src={shareButton} alt="share" />
-            </div>
-            Sdílet s přáteli
-          </div>
-        </Button>
-      </div>
-      <div className="resultCard">
         <div className="resultCard__content">
           <div className="resultCard__text">
             <h4 className="resultCard__title">{bestResult.result}</h4>
