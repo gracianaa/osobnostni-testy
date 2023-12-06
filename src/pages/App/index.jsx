@@ -30,7 +30,10 @@ export const App = () => {
   return (
     <div id="home" className="site" onClick={handleClick}>
       <Menu onToggleMenu={setMenuOpened} menuOpened={menuOpened} />
-      <Outlet />
+      <div className="content">
+        <Outlet />
+      </div>
+
       <Footer />
     </div>
   );

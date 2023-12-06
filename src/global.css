@@ -26,6 +26,11 @@ body {
   background: linear-gradient(173deg, rgba(171, 248, 231, 0.4951923076923077) 2%, rgba(172, 166, 198, 0.5408653846153846) 98%);
 }
 
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 
 h1,
 h2 {
