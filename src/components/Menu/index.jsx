@@ -23,7 +23,9 @@ export const Menu = ({ onToggleMenu, menuOpened }) => {
         </div>
         <div
           className={
-            menuOpened ? 'menu__items' : 'menu__items menu__items--closed'
+            menuOpened
+              ? 'menu__items menu__items--opened'
+              : 'menu__items menu__items--closed'
           }
         >
           <MenuItem

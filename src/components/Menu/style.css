@@ -1,16 +1,19 @@
 .menu {
-  position: sticky;
-  top: 0;
   background-color: white;
   border-radius: 0 0 20px 20px;
+  position: sticky;
+  top: 0;
   z-index: 3;
   width: 100%;
 }
 
 .menu__toolBar {
+  border-radius: 0 0 20px 20px;
+  z-index: 4;
   display: flex;
   padding: 15px 30px;
   justify-content: space-between;
+  background-color: white;
   align-items: center;
   max-width: 1200px;
   margin: 0 auto;
@@ -18,7 +21,7 @@
 
 .menu__items {
   display: flex;
-  gap: 30px;
+  gap: 40px;
   justify-content: center;
   align-items: center;
 }
@@ -52,18 +55,24 @@
   .menu__items {
     position: absolute;
     flex-direction: column;
-    top: 52px;
+    top: -75px;
     left: 0;
-    z-index: 2;
+    z-index: -2;
     width: 100%;
     background-color: white;
     border-radius: 0 0 20px 20px;
-    padding-bottom: 15px;
+    padding: 15px 0;
     gap: 10px;
   }
 
-  .menu__items--closed {
-    display: none;
+  .menu__items.menu__items--closed {
+    transform: translate(0);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  }
+
+  .menu__items.menu__items--opened {
+    transform: translate(0, 118px);
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
   }
 
   span.cross:nth-child(1) {
@@ -86,8 +95,6 @@
     transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
   }
 }
-
-
 
 .menu__logo {
   text-decoration: none;

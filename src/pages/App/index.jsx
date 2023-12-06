@@ -31,7 +31,7 @@ export const App = () => {
     <div id="home" className="site" onClick={handleClick}>
       <Menu onToggleMenu={setMenuOpened} menuOpened={menuOpened} />
       <div
-        className="content"
+        className="app__content"
         onClick={() => {
           setMenuOpened(false);
         }}

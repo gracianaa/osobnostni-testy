@@ -5,7 +5,7 @@ import { PageIntro } from '../../components/PageIntro';
 
 export const HomePage = () => {
   return (
-    <main>
+    <main className="content">
       <PageIntro />
       <ChooseTest />
       <AboutPersonality />
