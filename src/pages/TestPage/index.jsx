@@ -8,9 +8,9 @@ export const TestPage = () => {
   const test = tests[testId];
 
   return (
-    <div>
+    <>
       <h1>{test.title}</h1>
       <Outlet context={test} />
-    </div>
+    </>
   );
 };
