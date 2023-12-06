@@ -10,14 +10,25 @@
 }
 
 .cardTest {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.368);
   box-shadow: var(--shadow);
   padding: 30px;
-  width: 80%;
+  max-width: 500px;
+  width: 100%;
 }
 
 .cardTest__info {
   text-align: center;
   margin-top: 8px;
+}
+
+@media screen and (min-width: 850px) {
+  .cardTest {
+    flex-basis: 1fr;
+  }
 }
