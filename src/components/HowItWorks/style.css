@@ -1,5 +1,5 @@
 .howItWorks {
-  margin-top: 40px;
+  margin-top: 80px;
 }
 
 .howItWorks__container {
@@ -44,6 +44,7 @@
 
 @media screen and (min-width: 850px) {
   .howItWorks {
+    margin-top: 40px;
     display: flex;
     align-items: center;
     justify-content: center;

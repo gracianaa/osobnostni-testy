@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 export const Footer = () => {
   return (
     <footer className="footer">
-      <h3 className="footer__heading">Osobnostní testy</h3>
+      <h4 className="footer__heading">Osobnostní testy</h4>
       <div className="footer__links">
         <Link className="link" to="/#chooseTest">
           Výběr testů
@@ -15,10 +15,10 @@ export const Footer = () => {
         <Link className="link" to="/#howItWorks">
           Práce s testy
         </Link>
-        <p className="footer__source">
-          Zdroj: Kniha osobnostních testů od Haulwen Nicholas{' '}
-        </p>
       </div>
+      <p className="footer__source">
+        Zdroj: Kniha osobnostních testů od Haulwen Nicholas{' '}
+      </p>
     </footer>
   );
 };
