@@ -2,16 +2,18 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 40px;
 }
 
 .intro__heading {
   font-size: 36px;
+  margin-bottom: 0;
 }
 
 .intro__subHeading {
   font-family: var(--font-primary);
   font-size: 20px;
-  margin: 15px 0;
+  margin: 5px 0 30px 0;
 }
 
 .intro__image {
@@ -23,4 +25,36 @@
 .intro__image img {
   width: 100%;
   max-width: 500px;
+}
+
+@media screen and (min-width: 850px) {
+  .intro {
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+
+  }
+
+  .intro__image {
+    flex-basis: 50%;
+    flex-shrink: 0;
+  }
+
+  .intro__text {
+    margin-top: 40px;
+  }
+
+  .intro__heading,
+  .intro__subHeading,
+  .intro__text {
+    text-align: left;
+  }
+
+  .intro__heading {
+    font-size: 65px;
+  }
+
+  .intro__subHeading {
+    font-size: 30px;
+  }
 }

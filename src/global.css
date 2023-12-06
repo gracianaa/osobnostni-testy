@@ -29,6 +29,7 @@ body {
 .content {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 40px;
 }
 
 
@@ -49,7 +50,6 @@ h4 {
 
 main {
   margin: 0 auto;
-  padding: 70px 20px 0 20px;
   text-align: center;
 }
 

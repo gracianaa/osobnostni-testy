@@ -16,7 +16,8 @@
   padding: 0px 30px;
   justify-content: space-between;
   align-items: center;
-
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .menu__draver {
