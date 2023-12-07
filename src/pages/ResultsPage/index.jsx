@@ -59,6 +59,9 @@ export const ResultsPage = () => {
           </div>
         </div>
         <div className="resultsPage__buttons">
+          <Button to={'/#chooseTest'} type={'primary'}>
+            Vybrat další test
+          </Button>
           <Button onClick={downloadPDF} type={'secondary'}>
             <div className="buttonShare">
               <div className="buttonShare__image">
@@ -66,9 +69,6 @@ export const ResultsPage = () => {
               </div>
               Uložit jako PDF
             </div>
-          </Button>
-          <Button to={'/#chooseTest'} type={'primary'}>
-            Vybrat další test
           </Button>
         </div>
       </div>

@@ -40,10 +40,18 @@
 
 .resultsPage__buttons {
   display: flex;
-  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
 @media screen and (min-width: 850px) {
+
+  .resultsPage__buttons {
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+  }
 
   .resultCard__permanent {
     display: flex;
