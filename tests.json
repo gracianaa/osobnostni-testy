@@ -544,7 +544,7 @@
     "results": [
       {
         "id": 0,
-        "minScore": 12,
+        "minScore": 0,
         "image": "/images/mon1.png",
         "result": "JSTE SKROMNÍ",
         "description": "Utratíte jen to, co musíte. Váš vztah k penězům je o šetření, ale často na úkor zábavy. Neradi riskujete, a pokud na něco nemáte peníze, nepořídíte si to. Vystačíte si s málem a chcete si být jistí, že máte našetřeno dost na důchod. Je skvělé, že si dáváte takový pozor, nesmíte však zapomenout trochu žít. Uvědomte si, že je v pořádku chtít víc. Možná byste si mohli založit speciální účet, kam si budete ukládat peníze určené na zábavu. Pokuste se začít žít přítomností."
@@ -887,7 +887,7 @@
     "results": [
       {
         "id": 0,
-        "minScore": 12,
+        "minScore": 0,
         "image": "/images/hon1.png",
         "result": "PODPRŮMĚR",
         "description": "Nejste k sobě upřímní. Je tak snadné dělat to, co bychom podle nás dělat měli, než k sobě být upřímní. Lžete ostatním o tom, co jíte, jak cvičíte, co pijete. Ale Ižete jenom sami sobě. Je těžké být k sobě upřímný, ale kdo jiný k nám má být upřímný než právě my sami? Začněte malými krůčky. Jste upřímní? Co lze udělat pro to, abyste byli otevřenější? Proč máte pocit, že musíte sobě a ostatním lhát?"
