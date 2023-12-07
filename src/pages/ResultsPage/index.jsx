@@ -110,6 +110,7 @@ export const ResultsPage = () => {
             className="button button--secondary"
             title={`${bestResult.result}`}
             url={currentURL}
+            separator=", celý výsledek osobnostního testu: "
           >
             <div className="buttonShare">
               <div className="buttonShare__image">
