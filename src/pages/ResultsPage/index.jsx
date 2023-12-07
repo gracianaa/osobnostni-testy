@@ -58,14 +58,19 @@ export const ResultsPage = () => {
             <img src={bestResult.image} alt={bestResult.image} />
           </div>
         </div>
-        <Button onClick={downloadPDF} type={'secondary'}>
-          <div className="buttonShare">
-            <div className="buttonShare__image">
-              <img src={pdfButton} alt="share" />
+        <div className="resultsPage__buttons">
+          <Button onClick={downloadPDF} type={'secondary'}>
+            <div className="buttonShare">
+              <div className="buttonShare__image">
+                <img src={pdfButton} alt="share" />
+              </div>
+              Uložit jako PDF
             </div>
-            Uložit jako PDF
-          </div>
-        </Button>
+          </Button>
+          <Button to={'/#chooseTest'} type={'primary'}>
+            Vybrat další test
+          </Button>
+        </div>
       </div>
     </div>
   );
