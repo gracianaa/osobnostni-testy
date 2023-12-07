@@ -62,7 +62,15 @@ export const ResultsPage = () => {
         <div className="resultCard__permanent" ref={refPDF}>
           <div className="resultCard__text">
             <h4 className="resultCard__title">{bestResult.result}</h4>
-            <p className="resultCard__description">{bestResult.description}</p>
+            {bestResult.description.map((br, index) => (
+              <p
+                key={index}
+                className="resultCard__description"
+                style={{ marginBottom: '1rem' }}
+              >
+                {br}
+              </p>
+            ))}
           </div>
           <div className="resultCard__img">
             <img src={bestResult.image} alt={bestResult.image} />

@@ -264,21 +264,34 @@
         "minScore": 0,
         "image": "/images/con1.png",
         "result": "KONFLIKTŮ SE STRANÍTE",
-        "description": "Snažíte se konfliktům vyhýbat. Problémům se vyhýbáte a raději neuděláte nic, než abyste problém řešili. Často cítíte frustraci, že vás nikdo neposlouchá, ale představa, že byste se ozvali, vás děsí. Vaší přirozenou reakcí na konflikt je utéct nebo ukrýt se, popřípadě se podvolíte, abyste unikli diskusi. Postupem času si však připadáte čím dál nešťastnější, a tedy i vystresovanější, až nakonec vybuchnete. Snažte se svůj názor vyjadřovat alespoň v méně vypjatých situacích a konfliktům se nevyhýbejte."
+        "description": [
+          "Snažíte se konfliktům vyhýbat. ",
+          "Problémům se vyhýbáte a raději neuděláte nic, než abyste problém řešili. Často cítíte frustraci, že vás nikdo neposlouchá, ale představa, že byste se ozvali, vás děsí.",
+          "Vaší přirozenou reakcí na konflikt je utéct nebo ukrýt se, popřípadě se podvolíte, abyste unikli diskusi. Postupem času si však připadáte čím dál nešťastnější, a tedy i vystresovanější, až nakonec vybuchnete.",
+          "Snažte se svůj názor vyjadřovat alespoň v méně vypjatých situacích a konfliktům se nevyhýbejte."
+        ]
       },
       {
         "id": 1,
         "minScore": 13,
         "image": "/images/con2.png",
         "result": "FUNGUJETE JAKO MÍROTVŮRCE",
-        "description": "Chcete, aby měl každý svůj hlas, a toužíte najít řešení přijatelné pro všechny. Věříte, že každý spor se dá vyřešit diskusí. Vždy se snažíte najít řešení a k problémům přistupujete střízlivě a pozitivně. Své názory vyjadřujete sebejistě, ale zároveň nasloucháte ostatním. Když dojde ke konfliktu, snažíte se vidět situaci z pohledu všech zúčastněných. Použijete výmluvnost, aby byl každý spokojený a řešení bylo přijatelné pro všechny. Víte ale, že občas se ujme vedení konfliktní osoba, a v takovém případě je pro vás těžké přijmout její řešení, abyste se vyhnuli sporu."
+        "description": [
+          "Chcete, aby měl každý svůj hlas, a toužíte najít řešení přijatelné pro všechny.",
+          "Věříte, že každý spor se dá vyřešit diskusí. Vždy se snažíte najít řešení a k problémům přistupujete střízlivě a pozitivně. Své názory vyjadřujete sebejistě, ale zároveň nasloucháte ostatním.",
+          "Když dojde ke konfliktu, snažíte se vidět situaci z pohledu všech zúčastněných. Použijete výmluvnost, aby byl každý spokojený a řešení bylo přijatelné pro všechny. Víte ale, že občas se ujme vedení konfliktní osoba, a v takovém případě je pro vás těžké přijmout její řešení, abyste se vyhnuli sporu."
+        ]
       },
       {
         "id": 2,
         "minScore": 25,
         "image": "/images/con3.png",
         "result": "JSTE BULDOZER",
-        "description": "Víte, co chcete, a konfliktu se nebojíte. V konfliktech se vyžíváte a víte, jak prosadit svůj názor. Někteří vás vnímají jako agresora, který jim může ublížit slovně či fyzicky. Někdy vyvoláte konflikt jen tak pro zábavu a divíte se, že si to ostatní berou tak osobně. Věříte, že nejlepší je všechno si vyříkat a hra na d'áblova advokáta může přinést nové nápady nebo vyřešit problémy. Snažíte se tedy vyvolat diskusi, ale zároveň nasloucháte ostatním, abyste na problém nahlíželi z více úhlů."
+        "description": [
+          "Víte, co chcete, a konfliktu se nebojíte. V konfliktech se vyžíváte a víte, jak prosadit svůj názor.",
+          "Někteří vás vnímají jako agresora, který jim může ublížit slovně či fyzicky. Někdy vyvoláte konflikt jen tak pro zábavu a divíte se, že si to ostatní berou tak osobně.",
+          "Věříte, že nejlepší je všechno si vyříkat a hra na ďáblova advokáta může přinést nové nápady nebo vyřešit problémy. Snažíte se tedy vyvolat diskusi, ale zároveň nasloucháte ostatním, abyste na problém nahlíželi z více úhlů."
+        ]
       }
     ]
   },
@@ -547,21 +560,33 @@
         "minScore": 0,
         "image": "/images/mon1.png",
         "result": "JSTE SKROMNÍ",
-        "description": "Utratíte jen to, co musíte. Váš vztah k penězům je o šetření, ale často na úkor zábavy. Neradi riskujete, a pokud na něco nemáte peníze, nepořídíte si to. Vystačíte si s málem a chcete si být jistí, že máte našetřeno dost na důchod. Je skvělé, že si dáváte takový pozor, nesmíte však zapomenout trochu žít. Uvědomte si, že je v pořádku chtít víc. Možná byste si mohli založit speciální účet, kam si budete ukládat peníze určené na zábavu. Pokuste se začít žít přítomností."
+        "description": [
+          "Utratíte jen to, co musíte.",
+          "Váš vztah k penězům je o šetření, ale často na úkor zábavy. Neradi riskujete, a pokud na něco nemáte peníze, nepořídíte si to. Vystačíte si s málem a chcete si být jistí, že máte našetřeno dost na důchod.",
+          "Je skvělé, že si dáváte takový pozor, nesmíte však zapomenout trochu žít. Uvědomte si, že je v pořádku chtít víc. Možná byste si mohli založit speciální účet, kam si budete ukládat peníze určené na zábavu. Pokuste se začít žít přítomností."
+        ]
       },
       {
         "id": 1,
         "minScore": 20,
         "image": "/images/mon2.png",
         "result": "UMÍTE ŠETŘIT I UTRÁCET",
-        "description": "Víte, co obnáší život. Život si máme užít, ale vy také víte, že s penězi je třeba zacházet opatrně, abyste se uměli vypořádat s těžkými životními situacemi. I když si spoříte a snažíte se plánovat, také si chcete užívat, protože nikdy nevíte, co budoucnost přinese. Jedná se o zdravý vztah a znamená to, že se dokážete bavit a zároveň se nemusíte strachovat o svou budoucnost. S vaším přístupem se nemusíte bát žít okamžikem."
+        "description": [
+          "Víte, co obnáší život. Život si máme užít, ale vy také víte, že s penězi je třeba zacházet opatrně, abyste se uměli vypořádat s těžkými životními situacemi.",
+          "I když si spoříte a snažíte se plánovat, také si chcete užívat, protože nikdy nevíte, co budoucnost přinese.",
+          "Jedná se o zdravý vztah a znamená to, že se dokážete bavit a zároveň se nemusíte strachovat o svou budoucnost. S vaším přístupem se nemusíte bát žít okamžikem."
+        ]
       },
       {
         "id": 2,
         "minScore": 28,
         "image": "/images/mon3.png",
         "result": "ROZHAZUJETE",
-        "description": "Žijete okamžikem. Milujete život a utrácíte, abyste se odměnili za svou tvrdou práci. Jakmile vám přijdou peníze, už je máte dávno utracené nebo přemýšlíte, jak byste je mohli utratit. Nemáte žádné úspory a neustále si děláte starosti, jak zaplatíte účty a dluhy. Zamyslete se nad svým přístupem k penězům a nad tím, odkud se bere vaše touha utrácet je bez rozmyšlení. Je dobré se bavit, ale pokud člověk utrácí příliš, často to souvisí s potlačenými emocemi, které pramení z touhy po uznání nebo slouží jako mechanismus, jak se vyrovnat s životním údělem."
+        "description": [
+          "Žijete okamžikem. Milujete život a utrácíte, abyste se odměnili za svou tvrdou práci.",
+          "Jakmile vám přijdou peníze, už je máte dávno utracené nebo přemýšlíte, jak byste je mohli utratit. Nemáte žádné úspory a neustále si děláte starosti, jak zaplatíte účty a dluhy.",
+          "Zamyslete se nad svým přístupem k penězům a nad tím, odkud se bere vaše touha utrácet je bez rozmyšlení. Je dobré se bavit, ale pokud člověk utrácí příliš, často to souvisí s potlačenými emocemi, které pramení z touhy po uznání nebo slouží jako mechanismus, jak se vyrovnat s životním údělem."
+        ]
       }
     ]
   },
@@ -890,21 +915,34 @@
         "minScore": 0,
         "image": "/images/hon1.png",
         "result": "PODPRŮMĚR",
-        "description": "Nejste k sobě upřímní. Je tak snadné dělat to, co bychom podle nás dělat měli, než k sobě být upřímní. Lžete ostatním o tom, co jíte, jak cvičíte, co pijete. Ale Ižete jenom sami sobě. Je těžké být k sobě upřímný, ale kdo jiný k nám má být upřímný než právě my sami? Začněte malými krůčky. Jste upřímní? Co lze udělat pro to, abyste byli otevřenější? Proč máte pocit, že musíte sobě a ostatním lhát?"
+        "description": [
+          "Nejste k sobě upřímní.",
+          "Je tak snadné dělat to, co bychom podle nás dělat měli, než k sobě být upřímní.",
+          "Lžete ostatním o tom, co jíte, jak cvičíte, co pijete. Ale Ižete jenom sami sobě. Je těžké být k sobě upřímný, ale kdo jiný k nám má být upřímný než právě my sami?",
+          "Začněte malými krůčky. Jste upřímní? Co lze udělat pro to, abyste byli otevřenější? Proč máte pocit, že musíte sobě a ostatním lhát?"
+        ]
       },
       {
         "id": 1,
         "minScore": 25,
         "image": "/images/hon2.png",
         "result": "PRŮMĚR",
-        "description": "Jste k sobě stále upřímnější. Většina lidí zažívá dny, kdy k sobě nedokážou být upřímní. Jak často jste přemýšleli o tom, že váš život není takový, jak byste chtěli? Takové myšlenky má každý. Nalháváme si, proč bychom měli něco dělat, místo abychom dělali něco, co opravdu chceme a co je pro nás to správné. Buďte k sobě každý den upřímnější a váš život se od základu změní."
+        "description": [
+          "Jste k sobě stále upřímnější. Většina lidí zažívá dny, kdy k sobě nedokážou být upřímní.",
+          "Jak často jste přemýšleli o tom, že váš život není takový, jak byste chtěli? Takové myšlenky má každý. Nalháváme si, proč bychom měli něco dělat, místo abychom dělali něco, co opravdu chceme a co je pro nás to správné.",
+          "Buďte k sobě každý den upřímnější a váš život se od základu změní."
+        ]
       },
       {
         "id": 2,
         "minScore": 37,
         "image": "/images/hon3.png",
         "result": "NADPRŮMĚR",
-        "description": "Jste k sobě upřímní a otevření. Naučili jste se, že pokud nejste upřímní k tomu, jak se cítíte, jak vypadáte a co děláte, nemůžete být upřímní ani k okolnímu světu. Zjistili jste, že upřímnost vede k osvobození od břemene toho, co byste měli dělat. Teprve pak dokážete rozpoznat své silné stránky, ovládnout svůj strach, mít vše pod kontrolou, a díky tomu žít autentický život."
+        "description": [
+          "Jste k sobě upřímní a otevření.",
+          "Naučili jste se, že pokud nejste upřímní k tomu, jak se cítíte, jak vypadáte a co děláte, nemůžete být upřímní ani k okolnímu světu.",
+          "Zjistili jste, že upřímnost vede k osvobození od břemene toho, co byste měli dělat. Teprve pak dokážete rozpoznat své silné stránky, ovládnout svůj strach, mít vše pod kontrolou, a díky tomu žít autentický život."
+        ]
       }
     ]
   }
