@@ -49,7 +49,7 @@ export const EvaluationSlide = ({ test, selectedAnswers }) => {
     content = (
       <>
         <h3 className="question__title">
-          Ups, zdá se že jsi vynechal některou otázku 🙁
+          Ups, zdá se že jsi vynechal některou otázku... 🙁
         </h3>
         <div className="lastQuestion__image">
           <img src={rejection} alt="rejection image" />
