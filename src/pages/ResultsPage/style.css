@@ -55,8 +55,17 @@
 
   .resultCard__permanent {
     display: flex;
-    gap: 30px;
+    gap: 80px;
     justify-content: space-between;
+    padding: 30px 100px 0 100px;
+  }
+
+  .resultCard__title {
+    margin-bottom: 30px;
+  }
+
+  .resultCard__description {
+    font-size: 1.1rem;
   }
 
   .resultCard__text {
