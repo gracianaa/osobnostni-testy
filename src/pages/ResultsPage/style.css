@@ -1,74 +1,71 @@
 .resultCard {
-  display: flex;
-  flex-direction: column;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.368);
   box-shadow: var(--shadow);
-  padding: 20px;
+  padding: 30px;
   width: 100%;
-  margin: 15px auto;
-  gap: 20px;
-  align-items: center;
+  margin: 30px auto;
 }
 
-
-.resultCard__content {
+.resultCard__permanent {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 .resultCard__title {
+  font-size: 20px;
   font-family: var(--font-primary);
+  margin-bottom: 20px;
 }
 
-.resultCard__text {
+.buttonShare {
   display: flex;
-  flex-direction: column;
-  gap: 30px;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.buttonShare__image img {
+  width: 100%;
+  max-width: 15px;
 }
 
 .resultCard__img {
   display: none;
 }
 
-
-.buttonShare {
-  display: flex;
-  width: 140px;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.buttonShare__image {
-  flex-basis: 15%;
-}
-
-.buttonShare__image img {
-  width: 100%;
-}
-
 @media screen and (min-width: 850px) {
   .resultCard {
-    padding: 30px;
-    width: 90%;
-    gap: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 10px;
   }
 
-  .resultCard__content {
-    flex-direction: row;
-    width: 100%;
-    align-items: center;
-    padding: 0 30px;
-    gap: 30px;
+  .resultCard__permanent {
+    min-height: 100%;
+    flex-shrink: 1;
+    flex-grow: 1;
+    flex-basis: 50%;
+    justify-content: space-between;
   }
 
   .resultCard__img {
     display: block;
     width: 100%;
-    min-width: 250px;
+    flex-basis: 50%;
+    flex-grow: 1;
+    text-align: right;
+    max-width: 400px;
+    max-height: 400px;
   }
 
   .resultCard__img img {
-    width: 100%;
+    width: 400px;
+    height: 100%;
+    object-fit: contain;
   }
 }

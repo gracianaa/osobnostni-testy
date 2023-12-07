@@ -25,11 +25,14 @@ body {
   min-height: 100vh;
   background: rgb(171, 233, 248);
   background: linear-gradient(173deg, rgba(171, 248, 231, 0.4951923076923077) 2%, rgba(172, 166, 198, 0.5408653846153846) 98%);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
 .content {
   max-width: 1200px;
+
   margin: 0 auto;
   padding: 0 40px;
 }

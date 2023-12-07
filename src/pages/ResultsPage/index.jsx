@@ -48,24 +48,24 @@ export const ResultsPage = () => {
 
   return (
     <div className="content">
-      <div className="resultCard">
-        <div className="resultCard__content" ref={refPDF}>
+      <div className="resultCard" ref={refPDF}>
+        <div className="resultCard__permanent">
           <div className="resultCard__text">
             <h4 className="resultCard__title">{bestResult.result}</h4>
             <p className="resultCard__description">{bestResult.description}</p>
           </div>
-          <div className="resultCard__img">
-            <img src={bestResult.image} alt={bestResult.image} />
-          </div>
-        </div>
-        <Button onClick={downloadPDF} type={'secondary'}>
-          <div className="buttonShare">
-            <div className="buttonShare__image">
-              <img src={pdfButton} alt="share" />
+          <Button onClick={downloadPDF} type={'secondary'}>
+            <div className="buttonShare">
+              <div className="buttonShare__image">
+                <img src={pdfButton} alt="share" />
+              </div>
+              Uložit jako PDF
             </div>
-            Uložit jako PDF
-          </div>
-        </Button>
+          </Button>
+        </div>
+        <div className="resultCard__img">
+          <img src={bestResult.image} alt={bestResult.image} />
+        </div>
       </div>
     </div>
   );
