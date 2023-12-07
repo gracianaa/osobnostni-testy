@@ -1,10 +1,18 @@
 import { Button } from '../../components/Button';
 import pdfButton from './pdf_v2.png';
+import fbButton from './facebook.png';
+import waButton from './whatsapp.png';
 import './style.css';
 import { useOutletContext, useParams } from 'react-router-dom';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
 import { useRef } from 'react';
+import {
+  FacebookShareButton,
+  FacebookIcon,
+  WhatsappShareButton,
+  WhatsappIcon,
+} from 'react-share';
 
 export const ResultsPage = () => {
   const { score } = useParams();
@@ -46,6 +54,8 @@ export const ResultsPage = () => {
     }
   });
 
+  const currentURL = window.location.href;
+
   return (
     <div className="content">
       <div className="resultCard">
@@ -70,6 +80,44 @@ export const ResultsPage = () => {
               Uložit jako PDF
             </div>
           </Button>
+
+          <FacebookShareButton
+            style={{
+              backgroundColor: 'white',
+              padding: '10px 20px',
+              fontSize: '15px',
+              color: '#968BC8',
+            }}
+            className="button button--secondary"
+            url={currentURL}
+            quote={`${bestResult.result}`}
+          >
+            <div className="buttonShare">
+              <div className="buttonShare__image">
+                <img src={fbButton} alt="share" />
+              </div>
+              Sdílet na Facebook
+            </div>
+          </FacebookShareButton>
+
+          <WhatsappShareButton
+            style={{
+              backgroundColor: 'white',
+              padding: '10px 20px',
+              fontSize: '15px',
+              color: '#968BC8',
+            }}
+            className="button button--secondary"
+            title={`${bestResult.result}`}
+            url={currentURL}
+          >
+            <div className="buttonShare">
+              <div className="buttonShare__image">
+                <img src={waButton} alt="share" />
+              </div>
+              Sdílet na WhatsApp
+            </div>
+          </WhatsappShareButton>
         </div>
       </div>
     </div>
