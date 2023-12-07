@@ -8,3 +8,11 @@
 .app__content {
   flex-grow: 1;
 } */
+
+#app {
+  min-height: 100vh;
+}
+
+.site {
+  min-height: 100vh;
+}
