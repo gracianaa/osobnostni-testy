@@ -1,18 +1,14 @@
-/* .site {
+.site {
 
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .app__content {
   flex-grow: 1;
-} */
-
-#app {
-  min-height: 100vh;
 }
 
-.site {
+#app {
   min-height: 100vh;
 }
