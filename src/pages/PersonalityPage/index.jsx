@@ -1,4 +1,6 @@
 import './style.css';
+import { Button } from '../../components/Button';
+import woman from './woman.png';
 
 export const PersonalityPage = () => {
   return (
@@ -11,6 +13,7 @@ export const PersonalityPage = () => {
           jedná o společenské postavení, intelekt, zaměstnání, nebo auto, kterým
           daný člověk jezdí. Někdy jednoduše předpokládáme, že se všichni lidé s
           určitými vlastnostmi budou chovat jistým způsobem, místo abychom je
+          <img className="personalityPage__img" src={woman} alt="woman" />
           přijali jako jednotlivce. A tehdy musíme zasadit osobnostní testy do
           kontextu.
           <br />
@@ -78,6 +81,9 @@ export const PersonalityPage = () => {
           oblasti lidské osobnosti lze považovat dva psychology - Sigmunda
           Freuda a Carla Gustava Junga.
         </p>
+        <Button to="/#chooseTest" type="secondary">
+          Vybrat test
+        </Button>
       </div>
     </div>
   );
