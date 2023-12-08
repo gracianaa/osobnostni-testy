@@ -1,3 +1,7 @@
 .testPage__title {
   margin-top: 40px;
 }
+
+.testPage {
+  flex-grow: 1;
+}

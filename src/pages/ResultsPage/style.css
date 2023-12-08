@@ -1,9 +1,9 @@
 .resultCard {
-  padding: 40px 30px 30px 30px;
+  padding: 50px 30px;
+  padding-bottom: 50px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.368);
   box-shadow: var(--shadow);
-  padding-bottom: 30px;
   width: 100%;
   margin: 30px auto;
   display: flex;
@@ -19,16 +19,65 @@
   margin-bottom: 20px;
 }
 
-.buttonShare {
+.shareButtons__parent {
+  position: relative;
   display: flex;
-  gap: 10px;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
-.buttonShare__image img {
+.react-share__ShareButton {
+  transition: transform 0.2s;
+}
+
+.react-share__ShareButton:hover {
+  transform: scale(1.1);
+}
+
+.buttonsShare {
+  position: absolute;
+  top: 50px;
+  display: flex;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+
+.buttonPdf {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  padding-bottom: 5px;
+  transition: transform 0.2s;
+}
+
+.buttonPdf:hover {
+  transform: scale(1.1);
+}
+
+.buttonPdf__image img {
   width: 100%;
-  max-width: 13px;
+}
+
+.buttonShare {
+  transform: scale(0);
+}
+
+.buttonShare.active {
+  transform: scale(1);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+.buttonShare.active:hover {
+  transform: scale(1.2);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+
+.buttonsShare.closed {
+  transform: scale(0);
+  transition: cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
 
 .resultCard__img {

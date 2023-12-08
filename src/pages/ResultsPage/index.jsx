@@ -1,12 +1,12 @@
 import { Button } from '../../components/Button';
-import pdfButton from './pdf_v2.png';
+import pdfButton from './pdf.png';
 import fbButton from './facebook.png';
 import waButton from './whatsapp.png';
 import './style.css';
 import { useOutletContext, useParams } from 'react-router-dom';
 import html2canvas from 'html2canvas';
 import jsPDF from 'jspdf';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import {
   FacebookShareButton,
   FacebookIcon,
@@ -16,7 +16,11 @@ import {
 
 export const ResultsPage = () => {
   const { score } = useParams();
-  const test = useOutletContext();
+  const data = useOutletContext();
+  const test = data[0];
+  const shareOpen = data[1];
+  const setShareOpen = data[2];
+  const shareButtonClass = `buttonShare ${shareOpen ? 'active' : 'closed'}`;
   const results = test.results;
   const refPDF = useRef();
 
@@ -80,53 +84,44 @@ export const ResultsPage = () => {
           <Button to={'/#chooseTest'} type={'primary'}>
             Vybrat další test
           </Button>
-          <Button onClick={downloadPDF} type={'secondary'}>
-            <div className="buttonShare">
-              <div className="buttonShare__image">
-                <img src={pdfButton} alt="share" />
-              </div>
-              Uložit jako PDF
-            </div>
-          </Button>
+          <div className="shareButtons__parent">
+            <Button
+              onClick={() => {
+                setShareOpen(!shareOpen);
+              }}
+              type={'secondary'}
+            >
+              Sdílet s přáteli
+            </Button>
 
-          <FacebookShareButton
-            style={{
-              backgroundColor: 'white',
-              padding: '10px 20px',
-              fontSize: '15px',
-              color: '#968BC8',
-            }}
-            className="button button--secondary"
-            url={currentURL}
-            quote={`${bestResult.result}`}
-          >
-            <div className="buttonShare">
-              <div className="buttonShare__image">
-                <img src={fbButton} alt="share" />
-              </div>
-              Sdílet na Facebook
-            </div>
-          </FacebookShareButton>
+            <div className="buttonsShare">
+              <button
+                className={`buttonPdf ${shareButtonClass}`}
+                onClick={downloadPDF}
+              >
+                <div className="buttonPdf__image">
+                  <img src={pdfButton} alt="share" />
+                </div>
+              </button>
 
-          <WhatsappShareButton
-            style={{
-              backgroundColor: 'white',
-              padding: '10px 20px',
-              fontSize: '15px',
-              color: '#968BC8',
-            }}
-            className="button button--secondary"
-            title={`${bestResult.result}`}
-            url={currentURL}
-            separator=", celý výsledek osobnostního testu: "
-          >
-            <div className="buttonShare">
-              <div className="buttonShare__image">
-                <img src={waButton} alt="share" />
-              </div>
-              Sdílet na WhatsApp
+              <FacebookShareButton
+                className={shareButtonClass}
+                url={currentURL}
+                quote={`${bestResult.result}`}
+              >
+                <FacebookIcon size={32} round={true} />
+              </FacebookShareButton>
+
+              <WhatsappShareButton
+                className={shareButtonClass}
+                title={`${bestResult.result}`}
+                url={currentURL}
+                separator=", celý výsledek osobnostního testu: "
+              >
+                <WhatsappIcon size={32} round={true} />
+              </WhatsappShareButton>
             </div>
-          </WhatsappShareButton>
+          </div>
         </div>
       </div>
     </div>

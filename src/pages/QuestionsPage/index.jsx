@@ -19,7 +19,9 @@ import { EvaluationSlide } from '../../components/EvaluationSlide';
 export const QuestionsPage = () => {
   const [selectedAnswers, setSelectedAnswers] = useState({});
 
-  const test = useOutletContext();
+  const data = useOutletContext();
+  const test = data[0];
+
   const questions = test.questions;
 
   const handleAnswerSelect = (questionId, answerId) => {

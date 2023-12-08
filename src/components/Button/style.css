@@ -11,8 +11,7 @@
   display: inline-block;
 }
 
-.button:hover,
-.button:active {
+.button:hover {
   transform: scale(1.1);
 }
 
