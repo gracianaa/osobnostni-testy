@@ -1,5 +1,5 @@
 .resultCard {
-  padding: 50px 30px;
+  padding: 50px 0;
   padding-bottom: 50px;
   border-radius: 15px;
   background-color: rgba(255, 255, 255, 0.368);
@@ -11,6 +11,10 @@
   gap: 30px;
   align-items: center;
   justify-content: center;
+}
+
+.resultCard__permanent {
+  padding: 0 30px;
 }
 
 .resultCard__title {
