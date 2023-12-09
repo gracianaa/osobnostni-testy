@@ -10,18 +10,19 @@ export const HowItWorks = () => {
           <ol className="howItWorks__list">
             <li className="howItWorks__item">
               <p className="howItWorks__text">
-                U každého testu si nejprve přečti úvod a poté si projdi otázky.
-              </p>
-            </li>
-            <li className="howItWorks__item">
-              <p className="howItWorks__text">
-                Pamatuj, že neexistují správné a špatné odpovědi.
+                Test vyplňuj v klidném a příjemném prostředí, kde tě nic nebude
+                rušit.
               </p>
             </li>
             <li className="howItWorks__item">
               <p className="howItWorks__text">
                 Nad otázkami nepřemýšlej, vyber odpověď, která k tobě nejvíc
                 promlouvá.
+              </p>
+            </li>
+            <li className="howItWorks__item">
+              <p className="howItWorks__text">
+                Pamatuj, že neexistují správné a špatné odpovědi.
               </p>
             </li>
           </ol>
