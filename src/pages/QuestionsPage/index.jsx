@@ -33,7 +33,7 @@ export const QuestionsPage = () => {
   const pagination = {
     clickable: true,
     renderBullet: function (index, className) {
-      if (index <= questions.length - 1) {
+      if (index < questions.length) {
         return '<span class="' + className + '">' + (index + 1) + '</span>';
       }
       return '';

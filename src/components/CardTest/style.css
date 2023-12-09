@@ -26,9 +26,3 @@
   text-align: center;
   margin-top: 8px;
 }
-
-@media screen and (min-width: 850px) {
-  .cardTest {
-    flex-basis: 1fr;
-  }
-}
