@@ -12,7 +12,7 @@ import 'swiper/css/pagination';
 import './style.css';
 
 // import required modules
-import { EffectCards, Pagination } from 'swiper/modules';
+import { EffectCards, Pagination, EffectCoverflow } from 'swiper/modules';
 import { AnswerList } from '../../components/AnswerList';
 import { EvaluationSlide } from '../../components/EvaluationSlide';
 
@@ -40,15 +40,27 @@ export const QuestionsPage = () => {
     },
   };
 
+  let supportsCards = null;
+
+  if (navigator.userAgent.match(/iPhone/i)) {
+    supportsCards = false;
+  } else {
+    supportsCards = true;
+  }
+
   return (
     <div className="swiper">
       <Swiper
         pagination={pagination}
-        effect={'cards'}
+        effect={supportsCards ? 'cards' : 'coverflow'}
         grabCursor={true}
         preventClicks={false}
         preventClicksPropagation={false}
-        modules={[EffectCards, Pagination]}
+        modules={
+          supportsCards
+            ? [EffectCards, Pagination]
+            : [EffectCoverflow, Pagination]
+        }
         centeredSlides={true}
         slidesPerView={'auto'}
         className="mySwiper"
