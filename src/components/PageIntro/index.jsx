@@ -7,7 +7,7 @@ export const PageIntro = () => {
     <section className="intro">
       <div className="intro__text">
         <h1 className="intro__heading">Každý z nás je unikát</h1>
-        <h2 className="intro__subHeading">Zjisti v čem vynikáš ty!</h2>
+        <h2 className="intro__subHeading">Zjisti, v čem vynikáš ty!</h2>
 
         <Button to="#chooseTest" type={'primary'}>
           Vybrat test
